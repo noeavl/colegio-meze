@@ -5,33 +5,38 @@ const mobileMenu = document.getElementById('mobile-menu');
 
 document.addEventListener('DOMContentLoaded', () => {
     const programButtons = document.querySelectorAll('.program-toggle');
-
     programButtons.forEach(button => {
         button.addEventListener('click', () => {
             const currentContainer = button.closest('.flex.flex-col');
             const currentContent = currentContainer.querySelector('.mt-5');
             const currentIcon = button.querySelector('i');
 
-            // Primero cerramos todos los programas
-            programButtons.forEach(otherButton => {
-                if (otherButton !== button) {
-                    const otherContainer = otherButton.closest('.flex.flex-col');
-                    const otherContent = otherContainer.querySelector('.mt-5');
-                    const otherIcon = otherButton.querySelector('i');
+            // Si el programa actual está abierto, lo cerramos
+            if (currentContent && !currentContent.classList.contains('hidden')) {
+                currentContent.classList.add('hidden');
+                currentIcon.classList.remove('fa-chevron-down');
+                currentIcon.classList.add('fa-chevron-right');
+                return;
+            }
 
-                    if (otherContent && otherIcon) {
-                        otherContent.classList.add('hidden');
-                        otherIcon.classList.remove('fa-chevron-down');
-                        otherIcon.classList.add('fa-chevron-right');
-                    }
+            // Si está cerrado, cerramos todos los demás y abrimos el actual
+            programButtons.forEach(otherButton => {
+                const otherContainer = otherButton.closest('.flex.flex-col');
+                const otherContent = otherContainer.querySelector('.mt-5');
+                const otherIcon = otherButton.querySelector('i');
+
+                if (otherContent && otherIcon) {
+                    otherContent.classList.add('hidden');
+                    otherIcon.classList.remove('fa-chevron-down');
+                    otherIcon.classList.add('fa-chevron-right');
                 }
             });
 
-            // Luego alternamos el estado del programa actual
+            // Abrimos el programa actual
             if (currentContent && currentIcon) {
-                currentContent.classList.toggle('hidden');
-                currentIcon.classList.toggle('fa-chevron-right');
-                currentIcon.classList.toggle('fa-chevron-down');
+                currentContent.classList.remove('hidden');
+                currentIcon.classList.remove('fa-chevron-right');
+                currentIcon.classList.add('fa-chevron-down');
             }
         });
     });
