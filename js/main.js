@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     programButtons.forEach(button => {
         button.addEventListener('click', () => {
-            const currentContainer = button.closest('.w-3\\/4');
+            const currentContainer = button.closest('.flex.flex-col');
             const currentContent = currentContainer.querySelector('.mt-5');
             const currentIcon = button.querySelector('i');
 
             // Primero cerramos todos los programas
             programButtons.forEach(otherButton => {
                 if (otherButton !== button) {
-                    const otherContainer = otherButton.closest('.w-3\\/4');
+                    const otherContainer = otherButton.closest('.flex.flex-col');
                     const otherContent = otherContainer.querySelector('.mt-5');
                     const otherIcon = otherButton.querySelector('i');
 
