@@ -1,6 +1,43 @@
+
 // Mobile menu toggle
 const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
+
+document.addEventListener('DOMContentLoaded', () => {
+    const programButtons = document.querySelectorAll('.program-toggle');
+
+    programButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const currentContainer = button.closest('.w-3\\/4');
+            const currentContent = currentContainer.querySelector('.mt-5');
+            const currentIcon = button.querySelector('i');
+
+            // Primero cerramos todos los programas
+            programButtons.forEach(otherButton => {
+                if (otherButton !== button) {
+                    const otherContainer = otherButton.closest('.w-3\\/4');
+                    const otherContent = otherContainer.querySelector('.mt-5');
+                    const otherIcon = otherButton.querySelector('i');
+
+                    if (otherContent && otherIcon) {
+                        otherContent.classList.add('hidden');
+                        otherIcon.classList.remove('fa-chevron-down');
+                        otherIcon.classList.add('fa-chevron-right');
+                    }
+                }
+            });
+
+            // Luego alternamos el estado del programa actual
+            if (currentContent && currentIcon) {
+                currentContent.classList.toggle('hidden');
+                currentIcon.classList.toggle('fa-chevron-right');
+                currentIcon.classList.toggle('fa-chevron-down');
+            }
+        });
+    });
+});
+
+
 
 mobileMenuButton.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
@@ -136,16 +173,4 @@ window.addEventListener('scroll', () => {
             });
         }
     });
-});
-
-// Form submission
-const contactForm = document.getElementById('contact-form');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    // Here you would typically send the form data to a server
-    // For this example, we'll just show an alert
-    alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
-    contactForm.reset();
 });

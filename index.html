@@ -19,78 +19,80 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/block-scrolling.css">
-    <link rel="stylesheet" href="./css/preeloader.css">
     <link rel="stylesheet" href="./css/output.css">
 </head>
 
 <body class="bg-gray-50 text-gray-800">
     <!-- Preloader con logo -->
-    <div class="preloader">
+    <!-- <div class="preloader">
         <img src="./assets/img/CM_logo.png" alt="Logo Colegio MEZE" class="rotating-logo">
-    </div>
+    </div> -->
 
     <!-- Header -->
-    <header class="sticky top-0 z-50 bg-white shadow-sm">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center">
-                <a href="#inicio" class="flex items-center">
-                    <img src="./assets/img/CM_logo.png" alt="Logo Colegio MEZE" class="w-[150px] h-auto">
-                </a>
+    <div
+        class="fixed z-50 bottom-5 right-5 bg-[#174775] text-white rounded-full text-3xl w-16 h-16 flex items-center justify-center">
+        <a href="https://wa.me/+528715981909?text=Hola%21%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n"
+            target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+    <div class="h-[100vh] flex flex-col">
+        <header class="sticky top-0 z-40 bg-white shadow-sm">
+            <div class="container mx-auto px-4 py-10 flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="#inicio" class="flex items-center">
+                        <img src="./assets/img/CM_logo.png" alt="Logo Colegio MEZE" class="w-[150px] h-auto">
+                    </a>
+                </div>
+
+                <nav class="hidden lg:flex space-x-8">
+                    <a href="#inicio" class="nav-link active-nav text-[#174775] font-medium">Inicio</a>
+                    <a href="#nosotros" class="nav-link text-gray-600 hover:text-[#174775] font-medium">Nosotros</a>
+                    <a href="#programas" class="nav-link text-gray-600 hover:text-[#174775] font-medium">Oferta
+                        Educativa</a>
+                    <a href="#galeria" class="nav-link text-gray-600 hover:text-[#174775] font-medium">Descubre</a>
+                    <a href="#contacto" class="nav-link text-gray-600 hover:text-[#174775] font-medium">Contacto</a>
+                </nav>
+
+                <button id="mobile-menu-button" class="lg:hidden text-gray-600">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
             </div>
 
-            <nav class="hidden lg:flex space-x-8">
-                <a href="#inicio" class="nav-link active-nav text-[#174775] font-medium">Inicio</a>
-                <a href="#nosotros" class="nav-link text-gray-600 hover:text-[#174775] font-medium">Nosotros</a>
-                <a href="#programas" class="nav-link text-gray-600 hover:text-[#174775] font-medium">Oferta
-                    Educativa</a>
-                <a href="#galeria" class="nav-link text-gray-600 hover:text-[#174775] font-medium">Descubre</a>
-                <a href="#contacto" class="nav-link text-gray-600 hover:text-[#174775] font-medium">Contacto</a>
-            </nav>
-
-            <div class="hidden lg:block">
-                <a href="https://wa.me/+528715981909?text=Hola%21%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n"
-                    target="_blank"
-                    class="bg-[#174775] hover:bg-[#62E3F3] text-white px-4 py-2 rounded-lg font-medium transition duration-300">
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden lg:hidden bg-white py-2 px-4 shadow-lg">
+                <a href="#inicio" class="block py-2 text-[#174775] font-medium">Inicio</a>
+                <a href="#nosotros" class="block py-2 text-gray-600 hover:text-[#174775]">Nosotros</a>
+                <a href="#programas" class="block py-2 text-gray-600 hover:text-[#174775]">Oferta Educativa</a>
+                <a href="#galeria" class="block py-2 text-gray-600 hover:text-[#174775]">Descubre</a>
+                <a href="#contacto" class="block py-2 text-gray-600 hover:text-[#174775]">Contacto</a>
+                <a href="#contacto" class="block mt-2 bg-[#174775] text-white text-center rounded-lg font-medium">
                     <i class="fa-brands fa-whatsapp"></i>
                     Admisiones
                 </a>
             </div>
+        </header>
 
-            <button id="mobile-menu-button" class="lg:hidden text-gray-600">
-                <i class="fas fa-bars text-2xl"></i>
-            </button>
-        </div>
-
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white py-2 px-4 shadow-lg">
-            <a href="#inicio" class="block py-2 text-[#174775] font-medium">Inicio</a>
-            <a href="#nosotros" class="block py-2 text-gray-600 hover:text-[#174775]">Nosotros</a>
-            <a href="#programas" class="block py-2 text-gray-600 hover:text-[#174775]">Oferta Educativa</a>
-            <a href="#galeria" class="block py-2 text-gray-600 hover:text-[#174775]">Descubre</a>
-            <a href="#contacto" class="block py-2 text-gray-600 hover:text-[#174775]">Contacto</a>
-            <a href="#contacto" class="block mt-2 bg-[#174775] text-white py-2 text-center rounded-lg font-medium">
-                <i class="fa-brands fa-whatsapp"></i>
-                Admisiones
-            </a>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="inicio" class="text-[#174775] py-20 md:py-32 bg-[#eee]">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-10 md:mb-0">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Formando líderes para el <span
-                        class="text-[#62E3F3]">futuro</span></h1>
-                <p class="text-lg md:text-xl mb-8 opacity-90">Educación de excelencia con enfoque en valores humanos y
-                    desarrollo integral, partiendo de Preescolar hasta Bachillerato.</p>
+        <!-- Hero Section -->
+        <section id="inicio" class="grow flex justify-center items-center text-[#174775] py-20 md:py-32 bg-[#eee]">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                        Formando líderes para el <span class="text-[#62E3F3]">futuro</span>
+                    </h1>
+                    <p class="text-lg md:text-xl mb-8 opacity-90">
+                        Educación de excelencia con enfoque en valores
+                        humanos y desarrollo integral, partiendo de Preescolar hasta Bachillerato.
+                    </p>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="./assets/img/students-hero.jpeg" alt="Estudiantes felices en el campus"
+                        class="rounded-xl shadow-2xl w-full max-w-lg border-4 border-white">
+                </div>
             </div>
-            <div class="md:w-1/2 flex justify-center">
-                <img src="./assets/img/students-hero.jpeg" alt="Estudiantes felices en el campus"
-                    class="rounded-xl shadow-2xl w-full max-w-lg border-4 border-white">
-            </div>
-        </div>
-    </section>
+        </section>
+
+    </div>
 
     <!--Words section-->
     <section class="block-scrolling-text">
@@ -256,93 +258,129 @@
     </section>
 
     <!-- Programs Section -->
-    <section id="programas" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestra Oferta <span
-                        class="text-[#62E3F3]">Educativa</span>
-                </h2>
-                <div class="w-20 h-1 bg-[#62E3F3] mx-auto mb-6"></div>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                    Ofrecemos una educación integral desde preescolar hasta bachillerato, con programas diseñados para
-                    acompañar cada etapa del desarrollo y preparar a nuestros estudiantes para los retos del futuro.
-                </p>
+    <section id="programas" class="py-20 bg-[#174775]">
+        <div class="flex flex-col items-center md:flex-row gap-5 container mx-auto px-4">
+            <div class="w-1/2 flex flex-col items-end gap-5">
+                <div class="text-start bg-white p-10 rounded-xl">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-10">Nuestra Oferta
+                        <span class="text-[#62E3F3] border-b-4">Educativa</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        Ofrecemos una educación integral desde preescolar hasta bachillerato, con programas diseñados
+                        para
+                        acompañar cada etapa del desarrollo y preparar a nuestros estudiantes para los retos del futuro.
+                    </p>
+                </div>
+                <div class="w-3/4 hidden md:block">
+                    <img class="size-full object-cover rounded-xl" src="./assets/img/colegio-meze.webp"
+                        alt="Colegio MEZE">
+                </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="w-1/2 flex flex-col gap-5">
                 <!-- Program 1 -->
-                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80"
-                            alt="Educación inicial"
+                <div class="flex bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-1/4 overflow-hidden">
+                        <img src="./assets/img/preescolar.webp" alt="Educación preescolar"
                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
                     </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                                <i class="fas fa-baby text-blue-600"></i>
+                    <div class="flex flex-col justify-center w-3/4 p-10">
+                        <div class="flex justify-between">
+                            <div class="flex items-center justify-center gap-3">
+                                <div class="flex flex-col text-xl font-bold">
+                                    <h3>Educación Preescolar</h3>
+                                    <span class="text-[#174775]">3 a 5 años</span>
+                                </div>
                             </div>
-                            <h3 class="text-xl font-bold">Educación Preescolar</h3>
+                            <div class="flex items-center cursor-pointer program-toggle">
+                                <i class="fa-solid fa-chevron-down fa-xl text-[#174775]"></i>
+                            </div>
                         </div>
-                        <p class="text-gray-600 mb-4">Programa diseñado para niños de 3 a 5 años, enfocado en el
-                            desarrollo de habilidades básicas a través del juego y la exploración.</p>
+                        <div class="mt-3">
+                            <p class="text-gray-600">
+                                Enfocado en el desarrollo de habilidades básicas a través del juego y la exploración.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Program 2 -->
-                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
-                            alt="Educación primaria"
+                <div class="flex bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-1/4 overflow-hidden">
+                        <img src="./assets/img/primaria.webp" alt="Educación Primaria"
                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
                     </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                                <i class="fas fa-child text-blue-600"></i>
+                    <div class="flex flex-col justify-center w-3/4 p-10">
+                        <div class="flex justify-between">
+                            <div class="flex items-center justify-center">
+                                <div class="flex flex-col text-xl font-bold">
+                                    <h3>Educación Primaria</h3>
+                                    <span class="text-[#174775]">6 a 12 años</span>
+                                </div>
                             </div>
-                            <h3 class="text-xl font-bold">Educación Primaria</h3>
+                            <div class="flex items-center cursor-pointer program-toggle">
+                                <i class="fa-solid fa-chevron-right fa-xl text-[#174775]"></i>
+                            </div>
                         </div>
-                        <p class="text-gray-600 mb-4">Formación integral para niños de 6 a 12 años, con énfasis en
-                            pensamiento crítico, creatividad y valores.</p>
+                        <div class="mt-5 hidden">
+                            <p class="text-gray-600">
+                                Formación integral para niños con énfasis en pensamiento crítico, creatividad y valores.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Program 3 -->
-                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                            alt="Educación secundaria"
+                <div class="flex bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-1/4 overflow-hidden">
+                        <img src="./assets/img/secundaria.webp" alt="Educación Secundaria"
                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
                     </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                                <i class="fas fa-user-graduate text-blue-600"></i>
+                    <div class="flex flex-col justify-center w-3/4 p-10">
+                        <div class="flex justify-between">
+                            <div class="flex items-center justify-center">
+                                <div class="flex flex-col text-xl font-bold">
+                                    <h3>Educación Secundaria</h3>
+                                    <span class="text-[#174775]">12 a 15 años</span>
+                                </div>
                             </div>
-                            <h3 class="text-xl font-bold">Educación Secundaria</h3>
+                            <div class="flex items-center cursor-pointer program-toggle">
+                                <i class="fa-solid fa-chevron-right fa-xl text-[#174775]"></i>
+                            </div>
                         </div>
-                        <p class="text-gray-600 mb-4">Preparación académica rigurosa para adolescentes, con orientación
-                            vocacional y desarrollo de liderazgo.</p>
+                        <div class="mt-5 hidden">
+                            <p class="text-gray-600">
+                                Preparación académica rigurosa para adolescentes, con orientación vocacional y
+                                desarrollo de liderazgo.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Program 4 -->
-                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                            alt="Educación secundaria"
+                <div class="flex bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-1/4 overflow-hidden">
+                        <img src="./assets/img/bachillerato.webp" alt="Bachillerato"
                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
                     </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                                <i class="fas fa-user-graduate text-blue-600"></i>
+                    <div class="flex flex-col justify-center w-3/4 p-10">
+                        <div class="flex justify-between">
+                            <div class="flex items-center justify-center">
+                                <div class="flex flex-col text-xl font-bold">
+                                    <h3>Bachillerato</h3>
+                                    <span class="text-[#174775]">15 a 18 años</span>
+                                </div>
                             </div>
-                            <h3 class="text-xl font-bold">Bachillerato</h3>
+                            <div class="flex items-center cursor-pointer program-toggle">
+                                <i class="fa-solid fa-chevron-right fa-xl text-[#174775]"></i>
+                            </div>
                         </div>
-                        <p class="text-gray-600 mb-4">Preparación académica rigurosa para adolescentes, con orientación
-                            vocacional y desarrollo de liderazgo.</p>
+                        <div class="mt-5 hidden">
+                            <p class="text-gray-600">
+                                Preparación integral para la universidad con énfasis en excelencia académica, liderazgo
+                                y orientación vocacional.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -566,22 +604,58 @@
     <!-- Footer -->
     <footer class="bg-white text-[#174775] py-12">
         <div class="container mx-auto px-4">
-            <!--grid grid-cols-1 md:grid-cols-4 gap-8-->
             <div class="flex justify-between">
-                <div>
-                    <h3 class="text-xl font-bold mb-6 flex items-center">
-                        <img src="./assets/img/CM_logo.png" alt="Logo Colegio MEZE" class="w-[150px] h-auto">
-                    </h3>
-                    <p class="text-[#174775] mb-4">
-                        Formando líderes para el futuro con educación de calidad.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-[#174775] transition duration-300">
+                <div class="flex flex-col justify-start items-start">
+                    <div class="pb-5">
+                        <img src="./assets/img/CM_logo.png" alt="Logo Colegio MEZE" class="w-[250px] h-auto">
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="#"
+                            class="w-10 h-10 bg-[#174775] rounded-full flex items-center justify-center text-[#62E3F3] hover:text-white transition duration-300">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-[#174775] transition duration-300">
+                        <a href="#"
+                            class="w-10 h-10 bg-[#174775] rounded-full flex items-center justify-center text-[#62E3F3] hover:text-white transition duration-300">
                             <i class="fab fa-instagram"></i>
                         </a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <div class="w-8 h-8 bg-[#174775] rounded-full flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-[#62E3F3]"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-lg font-semibold">Dirección</p>
+                            <p class="text-gray-600 mt-1">Adolfo López Mateos 1030, Zaragoza, Ejido Zaragoza,
+                                27297 Torreón, Coah.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <div class="w-8 h-8 bg-[#174775] rounded-full flex items-center justify-center">
+                                <i class="fas fa-phone-alt text-[#62E3F3]"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-lg font-semibold">Teléfonos</p>
+                            <p class="text-gray-600 mt-1">+1 (234) 567-8900<br>+1 (234) 567-8901</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0">
+                            <div class="w-8 h-8 bg-[#174775] rounded-full flex items-center justify-center">
+                                <i class="fas fa-envelope text-[#62E3F3]"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <p class="text-lg font-semibold">Correo electrónico</p>
+                                <p class="text-gray-600 mt-1">info@cm-meze.edu<br>admisiones@cm-meze.edu</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -609,15 +683,6 @@
             </div>
         </div>
     </footer>
-    <div class="fixed bottom">
-        <a href="https://wa.me/+528715981909?text=Hola%21%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n"
-            target="_blank"
-            class="bg-[#174775] hover:bg-[#62E3F3] text-white px-4 py-2 rounded-lg font-medium transition duration-300">
-            <i class="fa-brands fa-whatsapp"></i>
-            Admisiones
-        </a>
-    </div>
-    <script src="./js/preeloader.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
