@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.gallery-item {
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #174775;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.active-nav::after {
+    width: 100%;
+}
