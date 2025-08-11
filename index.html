@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Institución educativa líder en formación integral con programas académicos innovadores y enfoque en el desarrollo humano">
+    <meta name="keywords" content="educación, colegio, formación académica">
+    <meta name="author" content="Nombre de la Institución">
+    <meta property="og:title" content="Colegio MEZE | Excelencia Académica">
+    <meta property="og:description" content="Formando líderes para el futuro con educación de calidad">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tuinstitucion.edu">
+    <meta property="og:image" content="https://www.tuinstitucion.edu/images/og-image.jpg">
+    <title>Colegio MEZE | Excelencia Académica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/block-scrolling.css">
+    <link rel="stylesheet" href="./css/preeloader.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .gallery-item {
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #174775;
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .active-nav::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <!-- Preloader con logo -->
+    <div class="preloader">
+        <img src="./assets/img/CM_logo.png" alt="Logo Colegio MEZE" class="rotating-logo">
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="#inicio" class="flex items-center">
+                    <img src="./assets/img/CM_logo.png" alt="Logo Colegio MEZE" class="w-[150px] h-auto">
+                </a>
+            </div>
+
+            <nav class="hidden lg:flex space-x-8">
+                <a href="#inicio" class="nav-link active-nav text-[#174775] font-medium">Inicio</a>
+                <a href="#nosotros" class="nav-link text-gray-600 hover:text-[#174775] font-medium">Nosotros</a>
+                <a href="#programas" class="nav-link text-gray-600 hover:text-[#174775] font-medium">Oferta Educativa</a>
+                <a href="#galeria" class="nav-link text-gray-600 hover:text-[#174775] font-medium">Descubre</a>
+                <a href="#contacto" class="nav-link text-gray-600 hover:text-[#174775] font-medium">Contacto</a>
+            </nav>
+
+            <div class="hidden lg:block">
+                <a href="https://wa.me/+528715981909?text=Hola%21%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n"
+                    target="_blank"
+                    class="bg-[#174775] hover:bg-[#62E3F3] text-white px-4 py-2 rounded-lg font-medium transition duration-300">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Admisiones
+                </a>
+            </div>
+
+            <button id="mobile-menu-button" class="lg:hidden text-gray-600">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="#inicio" class="block py-2 text-[#174775] font-medium">Inicio</a>
+            <a href="#nosotros" class="block py-2 text-gray-600 hover:text-[#174775]">Nosotros</a>
+            <a href="#programas" class="block py-2 text-gray-600 hover:text-[#174775]">Oferta Educativa</a>
+            <a href="#galeria" class="block py-2 text-gray-600 hover:text-[#174775]">Descubre</a>
+            <a href="#contacto" class="block py-2 text-gray-600 hover:text-[#174775]">Contacto</a>
+            <a href="#contacto" class="block mt-2 bg-[#174775] text-white py-2 text-center rounded-lg font-medium">
+                <i class="fa-brands fa-whatsapp"></i>
+                Admisiones
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="text-[#174775] py-20 md:py-32 bg-[#eee]">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Formando líderes para el <span
+                        class="text-[#62E3F3]">futuro</span></h1>
+                <p class="text-lg md:text-xl mb-8 opacity-90">Educación de excelencia con enfoque en valores humanos y
+                    desarrollo integral, partiendo de Preescolar hasta Bachillerato.</p>
+                <!--
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#programas"
+                        class="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold text-center transition duration-300">
+                        Nuestros Programas
+                    </a>
+                    <a href="#contacto"
+                        class="border-2 border-white hover:bg-white hover:text-blue-600 px-6 py-3 rounded-lg font-semibold text-center transition duration-300">
+                        Contáctanos
+                    </a>
+                </div>
+                -->
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="./assets/img/students-hero.jpeg"
+                    alt="Estudiantes felices en el campus"
+                    class="rounded-xl shadow-2xl w-full max-w-lg border-4 border-white">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section 
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">25+</div>
+                    <div class="text-gray-600">Años de experiencia</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">98%</div>
+                    <div class="text-gray-600">Egresados universitarios</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">50+</div>
+                    <div class="text-gray-600">Programas académicos</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">10k+</div>
+                    <div class="text-gray-600">Estudiantes formados</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!--Words section-->
+    <section class="block-scrolling-text">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Primera línea - Izquierda -->
+                    <div class="block-scrolling-text__line">
+                        <div class="scroll-container">
+                            <div class="content-group">
+                                <span>Liderazgo.</span><span>Ambición.</span><span class="stylised">Carácter.</span><span>Autoconfianza.</span><span>Liderazgo.</span><span>Ambición.</span><span class="stylised">Carácter.</span><span>Autoconfianza.</span><span>Liderazgo.</span><span>Ambición.</span><span class="stylised">Carácter.</span><span>Autoconfianza.</span>
+                            </div>
+                            <div class="content-group">
+                                <span>Liderazgo.</span><span>Ambición.</span><span class="stylised">Carácter.</span><span>Autoconfianza.</span><span>Liderazgo.</span><span>Ambición.</span><span class="stylised">Carácter.</span><span>Autoconfianza.</span><span>Liderazgo.</span><span>Ambición.</span><span class="stylised">Carácter.</span><span>Autoconfianza.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Segunda línea - Derecha -->
+                    <div class="block-scrolling-text__line">
+                        <div class="scroll-container">
+                            <div class="content-group">
+                                <span>Confianza.</span><span>Responsable.</span><span>Evolucionar.</span><span class="stylised">Amabilidad.</span><span>Confianza.</span><span>Responsable.</span><span>Evolucionar.</span><span class="stylised">Amabilidad.</span><span>Confianza.</span><span>Responsable.</span><span>Evolucionar.</span><span class="stylised">Amabilidad.</span>
+                            </div>
+                            <div class="content-group">
+                                <span>Confianza.</span><span>Responsable.</span><span>Evolucionar.</span><span class="stylised">Amabilidad.</span><span>Confianza.</span><span>Responsable.</span><span>Evolucionar.</span><span class="stylised">Amabilidad.</span><span>Confianza.</span><span>Responsable.</span><span>Evolucionar.</span><span class="stylised">Amabilidad.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tercera línea - Izquierda -->
+                    <div class="block-scrolling-text__line">
+                        <div class="scroll-container">
+                            <div class="content-group">
+                                <span>Inspirador.</span><span class="stylised">Comunidad.</span><span>Determinación.</span><span>Oportunidades.</span><span>Inspirador.</span><span class="stylised">Comunidad.</span><span>Determinación.</span><span>Oportunidades.</span><span>Inspirador.</span><span class="stylised">Comunidad.</span><span>Determinación.</span><span>Oportunidades.</span>
+                            </div>
+                            <div class="content-group">
+                                <span>Inspirador.</span><span class="stylised">Comunidad.</span><span>Determinación.</span><span>Oportunidades.</span><span>Inspirador.</span><span class="stylised">Comunidad.</span><span>Determinación.</span><span>Oportunidades.</span><span>Inspirador.</span><span class="stylised">Comunidad.</span><span>Determinación.</span><span>Oportunidades.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cuarta línea - Derecha -->
+                    <div class="block-scrolling-text__line">
+                        <div class="scroll-container">
+                            <div class="content-group">
+                                <span class="stylised">Excelencia.</span><span>Inclusión.</span><span>Compromiso.</span><span>Curiosidad.</span><span class="stylised">Excelencia.</span><span>Inclusión.</span><span>Compromiso.</span><span>Curiosidad.</span><span class="stylised">Excelencia.</span><span>Inclusión.</span><span>Compromiso.</span><span>Curiosidad.</span>
+                            </div>
+                            <div class="content-group">
+                                <span class="stylised">Excelencia.</span><span>Inclusión.</span><span>Compromiso.</span><span>Curiosidad.</span><span class="stylised">Excelencia.</span><span>Inclusión.</span><span>Compromiso.</span><span>Curiosidad.</span><span class="stylised">Excelencia.</span><span>Inclusión.</span><span>Compromiso.</span><span>Curiosidad.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="nosotros" class="bg-gray-50 py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestra <span class="text-[#62E3F3]">Misión</span></h2>
+                <div class="w-20 h-1 bg-[#62E3F3] mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Ser participe de la formación de personas independientes, comprometidas con la sociedad y con un gran sentido humano.
+                    Esto a través de brindarles la mejor calidad en herramientas para el desarrollo de sus habilidades basada en una
+                    educación con valores, en un ambiente armónico con la guía de un equipo de trabajo comprometidos con el bienestar
+                    integral del alumno.
+                </p>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="./assets/img/cm-students.jpg"
+                        alt="Estudiantes trabajando en equipo" class="rounded-xl shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6">¿Por qué elegirnos?</h3>
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-blue-600"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold">Excelencia educativa desde el inicio</h4>
+                                <p class="text-gray-600 mt-1">Formación sólida en cada etapa, desde preescolar hasta bachillerato, con programas actualizados y docentes comprometidos con el aprendizaje.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-blue-600"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold">Desarrollo integral del estudiante</h4>
+                                <p class="text-gray-600 mt-1">Fomentamos el crecimiento académico, emocional y social desde la infancia hasta la adolescencia, preparando estudiantes seguros y responsables.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-blue-600"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold">Innovación en el aula</h4>
+                                <p class="text-gray-600 mt-1">Contamos con tecnología de punta y herramientas digitales adaptadas a cada nivel educativo, promoviendo un aprendizaje activo y significativo.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-blue-600"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold">Proyección internacional</h4>
+                                <p class="text-gray-600 mt-1">Ofrecemos programas de enseñanza de idiomas que abren puertas a un mundo de oportunidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programas" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestra Oferta <span class="text-[#62E3F3]">Educativa</span>
+                </h2>
+                <div class="w-20 h-1 bg-[#62E3F3] mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Ofrecemos una educación integral desde preescolar hasta bachillerato, con programas diseñados para acompañar cada etapa del desarrollo y preparar a nuestros estudiantes para los retos del futuro.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Program 1 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80"
+                            alt="Educación inicial"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-baby text-blue-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Educación Preescolar</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Programa diseñado para niños de 3 a 5 años, enfocado en el
+                            desarrollo de habilidades básicas a través del juego y la exploración.</p>
+                    </div>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                            alt="Educación primaria"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-child text-blue-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Educación Primaria</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Formación integral para niños de 6 a 12 años, con énfasis en
+                            pensamiento crítico, creatividad y valores.</p>
+                    </div>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Educación secundaria"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-user-graduate text-blue-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Educación Secundaria</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Preparación académica rigurosa para adolescentes, con orientación
+                            vocacional y desarrollo de liderazgo.</p>
+                    </div>
+                </div>
+
+                <!-- Program 4 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Educación secundaria"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-user-graduate text-blue-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Bachillerato</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Preparación académica rigurosa para adolescentes, con orientación
+                            vocacional y desarrollo de liderazgo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Descubre <span class="text-[#62E3F3]">MEZE</span>
+                </h2>
+                <div class="w-20 h-1 bg-[#62E3F3] mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Descubre el día a día en nuestro entorno educativo
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item rounded-xl overflow-hidden shadow-md cursor-pointer relative group">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="Biblioteca moderna"
+                        class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-white text-center p-4">
+                            <h3 class="text-xl font-bold mb-2">Biblioteca</h3>
+                            <p>Espacio de estudio e investigación con más de 20,000 volúmenes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item rounded-xl overflow-hidden shadow-md cursor-pointer relative group">
+                    <img src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                        alt="Laboratorio de ciencias"
+                        class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-white text-center p-4">
+                            <h3 class="text-xl font-bold mb-2">Laboratorios</h3>
+                            <p>Tecnología de punta para experimentación científica</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item rounded-xl overflow-hidden shadow-md cursor-pointer relative group">
+                    <img src="./assets/img/karate.jpg"
+                        alt="Actividades deportivas"
+                        class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-white text-center p-4">
+                            <h3 class="text-xl font-bold mb-2">Deportes</h3>
+                            <p>Instalaciones para desarrollo físico y competencias</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item rounded-xl overflow-hidden shadow-md cursor-pointer relative group">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                        alt="Actividades artísticas"
+                        class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-white text-center p-4">
+                            <h3 class="text-xl font-bold mb-2">Arte y Cultura</h3>
+                            <p>Programas para desarrollar la creatividad y expresión artística</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item rounded-xl overflow-hidden shadow-md cursor-pointer relative group">
+                    <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Tecnología educativa"
+                        class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-white text-center p-4">
+                            <h3 class="text-xl font-bold mb-2">Tecnología</h3>
+                            <p>Aulas equipadas con lo último en herramientas digitales</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item rounded-xl overflow-hidden shadow-md cursor-pointer relative group">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="Comunidad estudiantil"
+                        class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-white text-center p-4">
+                            <h3 class="text-xl font-bold mb-2">Comunidad</h3>
+                            <p>Ambiente inclusivo y de apoyo mutuo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lightbox Modal -->
+            <div id="lightbox"
+                class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
+                <div class="relative w-full max-w-4xl">
+                    <button id="close-lightbox" class="absolute -top-12 right-0 text-white text-3xl">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <img id="lightbox-img" src="" alt="" class="w-full rounded-lg">
+                    <div id="lightbox-caption" class="text-white text-center mt-4 text-lg"></div>
+                    <button id="prev-btn"
+                        class="absolute left-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-4 rounded-r-lg">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="next-btn"
+                        class="absolute right-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-4 rounded-l-lg">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Contáctanos</h2>
+                <div class="w-20 h-1 bg-[#62E3F3] mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Estamos para responder tus preguntas y ayudarte en el proceso de admisión. ¡Escríbenos!
+                </p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-12 justify-center">
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-8 rounded-xl shadow-lg h-full">
+                        <h3 class="text-2xl font-bold mb-6">Información de contacto</h3>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="w-10 h-10 bg-[#174775] rounded-full flex items-center justify-center">
+                                        <i class="fas fa-map-marker-alt text-[#62E3F3]"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold">Dirección</h4>
+                                    <p class="text-gray-600 mt-1">Adolfo López Mateos 1030, Zaragoza, Ejido Zaragoza, 27297 Torreón, Coah.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="w-10 h-10 bg-[#174775] rounded-full flex items-center justify-center">
+                                        <i class="fas fa-phone-alt text-[#62E3F3]"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold">Teléfonos</h4>
+                                    <p class="text-gray-600 mt-1">+1 (234) 567-8900<br>+1 (234) 567-8901</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="w-10 h-10 bg-[#174775] rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope text-[#62E3F3]"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold">Correo electrónico</h4>
+                                    <p class="text-gray-600 mt-1">info@cm-meze.edu<br>admisiones@cm-meze.edu</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="w-10 h-10 bg-[#174775] rounded-full flex items-center justify-center">
+                                        <i class="fas fa-clock text-[#62E3F3]"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold">Horario de atención</h4>
+                                    <p class="text-gray-600 mt-1">Lunes a Viernes: 7:30 am - 3:30 pm<br>Sábados: 9:00 am
+                                        - 1:00 pm</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <h4 class="text-lg font-semibold mb-4">Síguenos en redes sociales</h4>
+                            <div class="flex space-x-4">
+                                <a href="#"
+                                    class="w-10 h-10 bg-[#174775] rounded-full flex items-center justify-center text-[#62E3F3] hover:text-white transition duration-300">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#"
+                                    class="w-10 h-10 bg-[#174775] rounded-full flex items-center justify-center text-[#62E3F3] hover:text-white transition duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 w-full">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.434846651258!2d-103.35611000000002!3d25.5238883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868fc4abbf0ff885%3A0x9c440d1fae9a59e1!2sColegio%20Meze%20A.C.!5e0!3m2!1ses!2smx!4v1747078423788!5m2!1ses!2smx"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white text-[#174775] py-12">
+        <div class="container mx-auto px-4">
+            <!--grid grid-cols-1 md:grid-cols-4 gap-8-->
+            <div class="flex justify-between">
+                <div>
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <img src="./assets/img/CM_logo.png" alt="Logo Colegio MEZE" class="w-[150px] h-auto">
+                    </h3>
+                    <p class="text-[#174775] mb-4">
+                        Formando líderes para el futuro con educación de calidad.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-[#174775] transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-[#174775] transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Enlaces rápidos</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#inicio" class="text-[#174775] hover:text-white transition duration-300">Inicio</a>
+                        </li>
+                        <li><a href="#nosotros"
+                                class="text-gray-400 hover:text-[#174775] transition duration-300">Nosotros</a></li>
+                        <li><a href="#programas"
+                                class="text-gray-400 hover:text-[#174775] transition duration-300">Programas</a></li>
+                        <li><a href="#galeria"
+                                class="text-gray-400 hover:text-[#174775] transition duration-300">Galería</a></li>
+                        <li><a href="#contacto"
+                                class="text-gray-400 hover:text-[#174775] transition duration-300">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!--
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Programas</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Educación
+                                Inicial</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Educación
+                                Primaria</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Educación
+                                Secundaria</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Programas de
+                                Verano</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Actividades
+                                Extracurriculares</a></li>
+                    </ul>
+                </div>
+                -->
+
+                <!--
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Boletín informativo</h4>
+                    <p class="text-gray-400 mb-4">
+                        Suscríbete para recibir noticias y actualizaciones sobre nuestros programas.
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="Tu correo electrónico"
+                            class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full">
+                        <button type="submit"
+                            class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-lg transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                -->
+            </div>
+
+            <div class="border-t border-[#174775] mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    &copy; 2025 Colegio MEZE. Todos los derechos reservados.
+                </p>
+                <!--
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Mapa del
+                        sitio</a>
+                </div>
+                -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/preeloader.js"></script>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Gallery lightbox functionality
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const closeLightbox = document.getElementById('close-lightbox');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+
+        let currentImageIndex = 0;
+        const images = [];
+        const captions = [];
+
+        // Prepare images and captions arrays
+        galleryItems.forEach((item, index) => {
+            const img = item.querySelector('img');
+            const caption = item.querySelector('div div h3').textContent + ' - ' + item.querySelector('div div p').textContent;
+
+            images.push(img.src);
+            captions.push(caption);
+
+            item.addEventListener('click', () => {
+                currentImageIndex = index;
+                openLightbox();
+            });
+        });
+
+        function openLightbox() {
+            lightboxImg.src = images[currentImageIndex];
+            lightboxCaption.textContent = captions[currentImageIndex];
+            lightbox.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightboxFunc() {
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        function showPrevImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            lightboxImg.src = images[currentImageIndex];
+            lightboxCaption.textContent = captions[currentImageIndex];
+        }
+
+        function showNextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            lightboxImg.src = images[currentImageIndex];
+            lightboxCaption.textContent = captions[currentImageIndex];
+        }
+
+        closeLightbox.addEventListener('click', closeLightboxFunc);
+        prevBtn.addEventListener('click', showPrevImage);
+        nextBtn.addEventListener('click', showNextImage);
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightboxFunc();
+            }
+        });
+
+        // Keyboard navigation for lightbox
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('hidden')) {
+                if (e.key === 'Escape') {
+                    closeLightboxFunc();
+                } else if (e.key === 'ArrowLeft') {
+                    showPrevImage();
+                } else if (e.key === 'ArrowRight') {
+                    showNextImage();
+                }
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+
+                    // Update active nav link
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active-nav', 'text-[#174775]');
+                        link.classList.add('text-gray-600');
+                    });
+
+                    if (targetId !== '#inicio') {
+                        this.classList.add('active-nav', 'text-[#174775]');
+                        this.classList.remove('text-gray-600');
+                    }
+                }
+            });
+        });
+
+        // Highlight active nav link on scroll
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY + 100;
+
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active-nav', 'text-[#174775]');
+                        link.classList.add('text-gray-600');
+
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active-nav', 'text-[#174775]');
+                            link.classList.remove('text-gray-600');
+                        }
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        const contactForm = document.getElementById('contact-form');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Here you would typically send the form data to a server
+            // For this example, we'll just show an alert
+            alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
+            contactForm.reset();
+        });
+    </script>
+</body>
+
+</html>
