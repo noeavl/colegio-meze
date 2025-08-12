@@ -3,47 +3,6 @@
 const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
 
-document.addEventListener('DOMContentLoaded', () => {
-    const programButtons = document.querySelectorAll('.program-toggle');
-    programButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const currentContainer = button.closest('.flex.flex-col');
-            const currentContent = currentContainer.querySelector('.mt-5');
-            const currentIcon = button.querySelector('i');
-
-            // Si el programa actual está abierto, lo cerramos
-            if (currentContent && !currentContent.classList.contains('hidden')) {
-                currentContent.classList.add('hidden');
-                currentIcon.classList.remove('fa-chevron-down');
-                currentIcon.classList.add('fa-chevron-right');
-                return;
-            }
-
-            // Si está cerrado, cerramos todos los demás y abrimos el actual
-            programButtons.forEach(otherButton => {
-                const otherContainer = otherButton.closest('.flex.flex-col');
-                const otherContent = otherContainer.querySelector('.mt-5');
-                const otherIcon = otherButton.querySelector('i');
-
-                if (otherContent && otherIcon) {
-                    otherContent.classList.add('hidden');
-                    otherIcon.classList.remove('fa-chevron-down');
-                    otherIcon.classList.add('fa-chevron-right');
-                }
-            });
-
-            // Abrimos el programa actual
-            if (currentContent && currentIcon) {
-                currentContent.classList.remove('hidden');
-                currentIcon.classList.remove('fa-chevron-right');
-                currentIcon.classList.add('fa-chevron-down');
-            }
-        });
-    });
-});
-
-
-
 mobileMenuButton.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
 });
@@ -235,3 +194,40 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(card)
     })
 })
+
+
+document.querySelectorAll('.program-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+        const programItem = button.closest('.program-item');
+        const content = programItem.querySelector('.program-content');
+        const container = programItem.querySelector('.program-container')
+        const icon = button.querySelector('i');
+
+        // Cierra cualquier otro programa que esté abierto
+        document.querySelectorAll('.program-item.active').forEach(activeItem => {
+            if (activeItem !== programItem) {
+                const activeContent = activeItem.querySelector('.program-content');
+                const activeContainer = activeItem.querySelector('.program-container');
+                const activeIcon = activeItem.querySelector('i');
+
+                activeItem.classList.remove('active');
+                activeContent.style.maxHeight = '0';
+                activeContainer.classList.remove('gap-3');
+                activeIcon.classList.replace('fa-chevron-down', 'fa-chevron-right');
+            }
+        });
+
+        // Alterna el estado del programa clickeado
+        programItem.classList.toggle('active');
+
+        if (programItem.classList.contains('active')) {
+            content.style.maxHeight = content.scrollHeight + 'px';
+            container.classList.add('gap-3');
+            icon.classList.replace('fa-chevron-right', 'fa-chevron-down');
+        } else {
+            content.style.maxHeight = '0';
+            container.classList.remove('gap-3');
+            icon.classList.replace('fa-chevron-down', 'fa-chevron-right');
+        }
+    });
+});
