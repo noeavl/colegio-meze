@@ -93,7 +93,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                if (entry.target.classList.contains('card-contact-fade-down')) {
+                if (entry.target.classList.contains('fade-down')) {
+                    entry.target.classList.remove('translate-y-1/5')
+                    entry.target.classList.add('opacity-100', 'ease-in-out')
+                } else if (entry.target.classList.contains('card-contact-fade-down')) {
                     entry.target.classList.replace('translate-y-1/2', 'translate-y-0')
                     entry.target.classList.replace('opacity-0', 'opacity-100')
                 } else {
@@ -107,18 +110,8 @@ document.addEventListener('DOMContentLoaded', function () {
         threshold: 0.2
     })
 
-    const observerProgram = new IntersectionObserver((entries, observe) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.remove('translate-y-1/5')
-                entry.target.classList.add('opacity-100', 'ease-in-out')
-                observerProgram.unobserve(entry.target)
-            }
-        })
-    })
-
     cardProgram.forEach(card => {
-        observerProgram.observe(card)
+        observer.observe(card)
     })
     cardFadeLeft.forEach(card => {
         observer.observe(card)
