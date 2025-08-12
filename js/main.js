@@ -100,13 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     entry.target.classList.remove('translate-x-1/2')
                     entry.target.classList.add('translate-x-0', 'opacity-100')
                 }
-            } else {
-                if (entry.target.classList.contains('card-contact-fade-down')) {
-                    entry.target.classList.replace('opacity-100', 'opacity-0')
-                    entry.target.classList.replace('translate-y-0', 'translate-y-1/2')
-                } else {
-                    entry.target.classList.remove('opacity-100', 'translate-x-0', 'ease-in-out')
-                }
+                observer.unobserve(entry.target)
             }
         })
     }, {
@@ -118,9 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (entry.isIntersecting) {
                 entry.target.classList.remove('translate-y-1/5')
                 entry.target.classList.add('opacity-100', 'ease-in-out')
-            } else {
-                entry.target.classList.add('translate-y-1/5')
-                entry.target.classList.remove('opacity-100', 'ease-in-out')
+                observerProgram.unobserve(entry.target)
             }
         })
     })
