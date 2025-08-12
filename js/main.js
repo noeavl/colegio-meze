@@ -204,21 +204,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     const cardProgram = document.querySelectorAll('.fade-down')
-
+    const cardFadeLeft = document.querySelectorAll('.card-fade-left')
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('translate-x-0', 'opacity-100', 'ease-in-out')
                 if (entry.target.classList.contains('fade-down')) {
                     entry.target.classList.remove('translate-y-1/5')
                     entry.target.classList.add('opacity-100', 'ease-in-out')
+                } else {
+                    entry.target.classList.remove('translate-x-1/2')
+                    entry.target.classList.add('translate-x-0', 'opacity-100')
                 }
             } else {
                 if (entry.target.classList.contains('fade-down')) {
                     entry.target.classList.add('translate-y-1/5')
                     entry.target.classList.remove('opacity-100', 'ease-in-out')
+                } else {
+                    entry.target.classList.remove('opacity-100', 'translate-x-0', 'ease-in-out')
                 }
-                entry.target.classList.remove('translate-x-0', 'opacity-100', 'ease-in-out')
             }
         })
     }, {
@@ -226,6 +229,9 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     cardProgram.forEach(card => {
+        observer.observe(card)
+    })
+    cardFadeLeft.forEach(card => {
         observer.observe(card)
     })
 })
