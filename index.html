@@ -14,6 +14,7 @@
     <meta property="og:url" content="https://www.tuinstitucion.edu">
     <meta property="og:image" content="https://www.tuinstitucion.edu/images/og-image.jpg">
     <title>Colegio MEZE | Excelencia Académica</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -29,13 +30,12 @@
     </div> -->
 
     <!-- Header -->
-    <div
-        class="fixed z-50 bottom-5 right-5 bg-[#174775] text-white rounded-full text-3xl w-16 h-16 flex items-center justify-center">
-        <a href="https://wa.me/+528715981909?text=Hola%21%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n"
-            target="_blank">
-            <i class="fa-brands fa-whatsapp"></i>
-        </a>
-    </div>
+
+    <a class="fixed z-50 bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white rounded-full text-3xl w-16 h-16 flex items-center justify-center"
+        href="https://wa.me/+528715981909?text=Hola%21%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n"
+        target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
     <div class="h-[100vh] flex flex-col">
         <header class="sticky top-0 z-40 bg-white shadow-sm">
             <div class="container mx-auto px-4 py-10 flex justify-between items-center">
@@ -77,10 +77,10 @@
         <section id="inicio" class="grow flex justify-center items-center text-[#174775] py-20 md:py-32 bg-[#eee]">
             <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight text-center">
                         Formando líderes para el <span class="text-[#62E3F3]">futuro</span>
                     </h1>
-                    <p class="text-lg md:text-xl mb-8 opacity-90">
+                    <p class="text-lg md:text-xl mb-8 opacity-90 text-center">
                         Educación de excelencia con enfoque en valores
                         humanos y desarrollo integral, partiendo de Preescolar hasta Bachillerato.
                     </p>
@@ -258,7 +258,7 @@
     </section>
 
     <!-- Programs Section -->
-    <section id="programas" class="py-20 bg-[#174775]">
+    <section id="programas" class="py-20 bg-[#174775] bg-gradient-to-r from-primary to-[#62E3F3]">
         <div class="flex flex-col items-center md:flex-row gap-5 container mx-auto px-4">
             <div class="md:w-1/2 flex flex-col items-end gap-5">
                 <div class="text-start bg-white p-10 rounded-xl">
@@ -511,199 +511,197 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contacto" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
+    <!-- Contact Section Unificada -->
+    <section id="contacto" class="bg-gray-50">
+        <!-- Header de la sección -->
+        <div class="container mx-auto px-4 pt-20 pb-10">
+            <div class="text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Contáctanos</h2>
-                <div class="w-20 h-1 bg-[#62E3F3] mx-auto mb-6"></div>
+                <div class="w-20 h-1 bg-accent mx-auto mb-6"></div>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">
                     Estamos para responder tus preguntas y ayudarte en el proceso de admisión. ¡Escríbenos!
                 </p>
             </div>
+        </div>
 
-            <div class="flex flex-col lg:flex-row gap-12 justify-center">
-                <div class="lg:w-1/2">
-                    <div class="bg-white p-8 rounded-xl shadow-lg h-full">
-                        <h3 class="text-2xl font-bold mb-6">Información de contacto</h3>
+        <!-- Contenido principal: Información + Mapa -->
+        <div class="container mx-auto px-4 pb-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
 
-                        <div class="space-y-6">
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 mt-1">
-                                    <div class="w-10 h-10 bg-[#174775] rounded-full flex items-center justify-center">
-                                        <i class="fas fa-map-marker-alt text-[#62E3F3]"></i>
+                <!-- Información de contacto -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 lg:p-10 h-full">
+                    <div class="h-full flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-8 text-primary">Información de contacto</h3>
+
+                            <div class="space-y-6">
+                                <!-- Dirección -->
+                                <div class="flex items-start group">
+                                    <div class="flex-shrink-0 mt-1">
+                                        <div
+                                            class="w-12 h-12 bg-primary rounded-full flex items-center justify-center group-hover:bg-accent transition-colors duration-300">
+                                            <i
+                                                class="fas fa-map-marker-alt text-accent group-hover:text-primary text-lg"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-semibold text-gray-800 mb-1">Dirección</h4>
+                                        <p class="text-gray-600 leading-relaxed">
+                                            Adolfo López Mateos 1030, Zaragoza<br>
+                                            Ejido Zaragoza, 27297 Torreón, Coah.
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="ml-4">
-                                    <h4 class="text-lg font-semibold">Dirección</h4>
-                                    <p class="text-gray-600 mt-1">Adolfo López Mateos 1030, Zaragoza, Ejido Zaragoza,
-                                        27297 Torreón, Coah.</p>
-                                </div>
-                            </div>
 
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 mt-1">
-                                    <div class="w-10 h-10 bg-[#174775] rounded-full flex items-center justify-center">
-                                        <i class="fas fa-phone-alt text-[#62E3F3]"></i>
+                                <!-- Teléfonos -->
+                                <div class="flex items-start group">
+                                    <div class="flex-shrink-0 mt-1">
+                                        <div
+                                            class="w-12 h-12 bg-primary rounded-full flex items-center justify-center group-hover:bg-accent transition-colors duration-300">
+                                            <i
+                                                class="fas fa-phone-alt text-accent group-hover:text-primary text-lg"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-semibold text-gray-800 mb-1">Teléfonos</h4>
+                                        <div class="space-y-1">
+                                            <p class="text-gray-600">+1 (234) 567-8900</p>
+                                            <p class="text-gray-600">+1 (234) 567-8901</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="ml-4">
-                                    <h4 class="text-lg font-semibold">Teléfonos</h4>
-                                    <p class="text-gray-600 mt-1">+1 (234) 567-8900<br>+1 (234) 567-8901</p>
-                                </div>
-                            </div>
 
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 mt-1">
-                                    <div class="w-10 h-10 bg-[#174775] rounded-full flex items-center justify-center">
-                                        <i class="fas fa-envelope text-[#62E3F3]"></i>
+                                <!-- Email -->
+                                <div class="flex items-start group">
+                                    <div class="flex-shrink-0 mt-1">
+                                        <div
+                                            class="w-12 h-12 bg-primary rounded-full flex items-center justify-center group-hover:bg-accent transition-colors duration-300">
+                                            <i class="fas fa-envelope text-accent group-hover:text-primary text-lg"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-semibold text-gray-800 mb-1">Correo electrónico</h4>
+                                        <div class="space-y-1">
+                                            <p class="text-gray-600">info@cm-meze.edu</p>
+                                            <p class="text-gray-600">admisiones@cm-meze.edu</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="ml-4">
-                                    <h4 class="text-lg font-semibold">Correo electrónico</h4>
-                                    <p class="text-gray-600 mt-1">info@cm-meze.edu<br>admisiones@cm-meze.edu</p>
-                                </div>
-                            </div>
 
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 mt-1">
-                                    <div class="w-10 h-10 bg-[#174775] rounded-full flex items-center justify-center">
-                                        <i class="fas fa-clock text-[#62E3F3]"></i>
+                                <!-- Horarios -->
+                                <div class="flex items-start group">
+                                    <div class="flex-shrink-0 mt-1">
+                                        <div
+                                            class="w-12 h-12 bg-primary rounded-full flex items-center justify-center group-hover:bg-accent transition-colors duration-300">
+                                            <i class="fas fa-clock text-accent group-hover:text-primary text-lg"></i>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="text-lg font-semibold">Horario de atención</h4>
-                                    <p class="text-gray-600 mt-1">Lunes a Viernes: 7:30 am - 3:30 pm<br>Sábados: 9:00 am
-                                        - 1:00 pm</p>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-semibold text-gray-800 mb-1">Horario de atención</h4>
+                                        <div class="space-y-1">
+                                            <p class="text-gray-600">
+                                                <span class="font-medium">Lunes a Viernes:</span> 7:30 am - 3:30 pm
+                                            </p>
+                                            <p class="text-gray-600">
+                                                <span class="font-medium">Sábados:</span> 9:00 am - 1:00 pm
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="mt-8">
-                            <h4 class="text-lg font-semibold mb-4">Síguenos en redes sociales</h4>
-                            <div class="flex space-x-4">
-                                <a href="#"
-                                    class="w-10 h-10 bg-[#174775] rounded-full flex items-center justify-center text-[#62E3F3] hover:text-white transition duration-300">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#"
-                                    class="w-10 h-10 bg-[#174775] rounded-full flex items-center justify-center text-[#62E3F3] hover:text-white transition duration-300">
-                                    <i class="fab fa-instagram"></i>
+                        <!-- Redes sociales y WhatsApp -->
+                        <div class="mt-8 pt-6 border-t border-gray-200">
+                            <h4 class="text-lg font-semibold mb-4 text-gray-800">Conéctate con nosotros</h4>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <!-- Redes sociales -->
+                                <div class="flex space-x-3">
+                                    <a href="https://www.facebook.com/colegiomezeoficial" target="_blank"
+                                        class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-accent hover:bg-accent hover:text-primary transition-all duration-300 transform hover:scale-110">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/colegiomeze/" target="_blank"
+                                        class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-accent hover:bg-accent hover:text-primary transition-all duration-300 transform hover:scale-110">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+
+                                <!-- Botón WhatsApp -->
+                                <a href="https://wa.me/+528715981909?text=Hola%21%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n"
+                                    target="_blank"
+                                    class="flex-1 sm:flex-none inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition-all duration-300 font-medium transform hover:scale-105 shadow-lg hover:shadow-xl">
+                                    <i class="fab fa-whatsapp mr-2 text-lg"></i>
+                                    Contáctanos por WhatsApp
                                 </a>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <!-- Mapa -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden h-full min-h-[500px]">
+                    <div class="h-full relative">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.434846651258!2d-103.35611000000002!3d25.5238883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868fc4abbf0ff885%3A0x9c440d1fae9a59e1!2sColegio%20Meze%20A.C.!5e0!3m2!1ses!2smx!4v1747078423788!5m2!1ses!2smx"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="rounded-2xl">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action adicional -->
+        <div class="container mx-auto px-4 pb-20">
+            <div
+                class="bg-[#174775] bg-gradient-to-r from-primary to-[#62E3F3]/60 rounded-2xl p-8 text-center text-white shadow-2xl">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4">¿Listo para formar parte de nuestra comunidad?</h3>
+                <p class="text-lg mb-6 opacity-90">
+                    Agenda una visita a nuestro campus y conoce de cerca nuestra propuesta educativa
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://wa.me/+528715981909?text=Hola%21%20Me%20gustar%C3%ADa%20agendar%20una%20visita%20al%20campus"
+                        target="_blank"
+                        class="inline-flex items-center justify-center bg-accent text-primary px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-white/20 hover:shadow-lg">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        Agendar Visita
+                    </a>
+                    <a href="mailto:admisiones@cm-meze.edu"
+                        class="inline-flex items-center justify-center text-white px-8 py-3 border-2 rounded-lg font-semibold transition-all duration-300 hover:bg-white/30">
+                        <i class="fas fa-envelope mr-2"></i>
+                        Solicitar Información
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Map Section -->
-    <div class="h-96 w-full">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.434846651258!2d-103.35611000000002!3d25.5238883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868fc4abbf0ff885%3A0x9c440d1fae9a59e1!2sColegio%20Meze%20A.C.!5e0!3m2!1ses!2smx!4v1747078423788!5m2!1ses!2smx"
-            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-white text-[#174775] py-12">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-10">
-                <div class="flex flex-col justify-start md:items-start items-center">
-                    <div class="pb-5">
-                        <img src="./assets/img/CM_logo.png" alt="Logo Colegio MEZE" class="w-[250px] h-auto">
-                    </div>
-                    <div class="flex gap-3">
-                        <a href="#"
-                            class="w-10 h-10 bg-[#174775] rounded-full flex items-center justify-center text-[#62E3F3] hover:text-white transition duration-300">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#"
-                            class="w-10 h-10 bg-[#174775] rounded-full flex items-center justify-center text-[#62E3F3] hover:text-white transition duration-300">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
+    <!-- Footer (simplificado para el ejemplo) -->
+    <footer class="bg-white border-t border-gray-200">
+        <div class="container mx-auto px-4 py-8">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-6">
+                <!-- Enlaces rápidos -->
+                <div class="flex flex-wrap justify-center gap-4 md:justify-start">
+                    <a href="#inicio"
+                        class="text-gray-600 hover:text-[#62E3F3] hover:underline underline-offset-4 transition-colors duration-500 font-medium">Inicio</a>
+                    <a href="#nosotros"
+                        class="text-gray-600 hover:text-[#62E3F3] hover:underline underline-offset-4 transition-colors duration-500 font-medium">Nosotros</a>
+                    <a href="#programas"
+                        class="text-gray-600 hover:text-[#62E3F3] hover:underline underline-offset-4 transition-colors duration-500 font-medium">Oferta
+                        Educativa</a>
+                    <a href="#galeria"
+                        class="text-gray-600 hover:text-[#62E3F3] hover:underline underline-offset-4 transition-colors duration-500 font-medium">Descubre</a>
+                    <a href="#contacto"
+                        class="text-gray-600 hover:text-[#62E3F3] hover:underline underline-offset-4 transition-colors duration-500 font-medium">Contacto</a>
                 </div>
-
-
-                <div>
-                    <ul class="space-y-3">
-                        <li>
-                            <a href="#inicio" class="text-[#174775] hover:text-white transition duration-300">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="#nosotros"
-                                class="text-gray-400 hover:text-[#174775] transition duration-300">Nosotros</a>
-                        </li>
-                        <li><a href="#programas"
-                                class="text-gray-400 hover:text-[#174775] transition duration-300">Programas</a></li>
-                        <li><a href="#galeria"
-                                class="text-gray-400 hover:text-[#174775] transition duration-300">Galería</a></li>
-                        <li><a href="#contacto"
-                                class="text-gray-400 hover:text-[#174775] transition duration-300">Contacto</a></li>
-                    </ul>
+                <!-- Derechos -->
+                <div class="text-center md:text-right">
+                    <p class="text-sm text-gray-600">
+                        &copy; 2025 <span class="font-semibold text-primary">Colegio MEZE</span>.
+                        Todos los derechos reservados.
+                    </p>
                 </div>
-                <div class="flex flex-col gap-4">
-                    <div class="flex items-start gap-3">
-                        <div class="flex-shrink-0">
-                            <div class="w-8 h-8 bg-[#174775] rounded-full flex items-center justify-center">
-                                <i class="fas fa-map-marker-alt text-[#62E3F3]"></i>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-lg font-semibold">Dirección</p>
-                            <p class="text-gray-600 mt-1 text-wrap">Adolfo López Mateos 1030, Zaragoza, Ejido Zaragoza,
-                                27297 Torreón, Coah.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <div class="flex-shrink-0">
-                            <div class="w-8 h-8 bg-[#174775] rounded-full flex items-center justify-center">
-                                <i class="fas fa-phone-alt text-[#62E3F3]"></i>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-lg font-semibold">Teléfonos</p>
-                            <p class="text-gray-600 mt-1">+1 (234) 567-8900<br>+1 (234) 567-8901</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="flex items-start gap-3">
-                        <div class="flex-shrink-0">
-                            <div class="w-8 h-8 bg-[#174775] rounded-full flex items-center justify-center">
-                                <i class="fas fa-envelope text-[#62E3F3]"></i>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <p class="text-lg font-semibold">Correo electrónico</p>
-                                <p class="text-gray-600 mt-1">info@cm-meze.edu<br>admisiones@cm-meze.edu</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <div class="flex-shrink-0">
-                            <div class="w-8 h-8 bg-[#174775] rounded-full flex items-center justify-center">
-                                <i class="fas fa-clock text-[#62E3F3]"></i>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <p class="text-lg font-semibold">Horario de atención</p>
-                                <p class="text-gray-600 mt-1">Lunes a Viernes: 7:30 am - 3:30 pm<br>Sábados: 9:00 am
-                                    - 1:00 pm</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="border-t border-[#174775] mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 text-sm mb-4 md:mb-0">
-                    &copy; 2025 Colegio MEZE. Todos los derechos reservados.
-                </p>
             </div>
         </div>
     </footer>
