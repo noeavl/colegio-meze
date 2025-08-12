@@ -198,3 +198,34 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 800); // Tiempo debe coincidir con la transición CSS
     }, 3500); // 3 segundos de visualización
 });
+
+
+/*Animaciones de texto*/
+
+document.addEventListener('DOMContentLoaded', function () {
+    const cardProgram = document.querySelectorAll('.fade-down')
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('translate-x-0', 'opacity-100', 'ease-in-out')
+                if (entry.target.classList.contains('fade-down')) {
+                    entry.target.classList.remove('translate-y-1/5')
+                    entry.target.classList.add('opacity-100', 'ease-in-out')
+                }
+            } else {
+                if (entry.target.classList.contains('fade-down')) {
+                    entry.target.classList.add('translate-y-1/5')
+                    entry.target.classList.remove('opacity-100', 'ease-in-out')
+                }
+                entry.target.classList.remove('translate-x-0', 'opacity-100', 'ease-in-out')
+            }
+        })
+    }, {
+        threshold: 0.2
+    })
+
+    cardProgram.forEach(card => {
+        observer.observe(card)
+    })
+})
