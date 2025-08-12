@@ -289,7 +289,7 @@
                         <img src="./assets/img/preescolar.webp" alt="Educación preescolar"
                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
                     </div>
-                    <div class="program-container flex flex-col justify-center md:w-3/4 p-10">
+                    <div class="program-container flex flex-col justify-center md:w-3/4 p-10 gap-3">
                         <div class="flex justify-between">
                             <div class="flex items-center justify-center gap-3">
                                 <div class="flex flex-col text-xl font-bold">
@@ -399,119 +399,108 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="galeria" class="py-20 bg-gray-50">
+    <section id="galeria" class="bg-gray-50">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
+            <div class="text-center py-20">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Descubre <span class="text-[#62E3F3]">MEZE</span>
                 </h2>
                 <div class="w-20 h-1 bg-[#62E3F3] mx-auto mb-6"></div>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                    Descubre el día a día en nuestro entorno educativo
+                    Te invitamos a descubrir MEZE y a vivir de cerca la energía, la creatividad y la pasión que definen
+                    nuestra comunidad educativa.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Gallery Item 1 -->
-                <div class="gallery-item rounded-xl overflow-hidden shadow-md cursor-pointer relative group">
-                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                        alt="Biblioteca moderna"
-                        class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
-                    <div
-                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                        <div class="text-white text-center p-4">
-                            <h3 class="text-xl font-bold mb-2">Biblioteca</h3>
-                            <p>Espacio de estudio e investigación con más de 20,000 volúmenes</p>
-                        </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
+                <div class="flex md:flex-row gap-4">
+                    <picture class="flex-1">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Biblioteca moderna" class="rounded-2xl w-full h-full object-cover">
+                    </picture>
+                    <div class="flex-1 flex flex-col gap-3 bg-[#174775] rounded-2xl p-10">
+                        <h3 class="text-white font-bold text-xl">Biblioteca</h3>
+                        <p class="text-white text-base">
+                            Un <span class="font-bold">centro de investigación</span> y conocimiento avanzado. Con más
+                            de 20,000 volúmenes
+                            y recursos
+                            digitales, es el espacio ideal para la <span class="font-bold">profundización
+                                académica</span> y el desarrollo
+                            de la
+                            <span class="font-bold">autonomía intelectual</span>.
+                        </p>
                     </div>
                 </div>
 
-                <!-- Gallery Item 2 -->
-                <div class="gallery-item rounded-xl overflow-hidden shadow-md cursor-pointer relative group">
-                    <img src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
-                        alt="Laboratorio de ciencias"
-                        class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
-                    <div
-                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                        <div class="text-white text-center p-4">
-                            <h3 class="text-xl font-bold mb-2">Laboratorios</h3>
-                            <p>Tecnología de punta para experimentación científica</p>
-                        </div>
+                <div class="flex md:flex-row gap-4">
+                    <picture class="flex-1">
+                        <img src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                            alt="Laboratorio de ciencias" class="rounded-2xl w-full h-full object-cover">
+                    </picture>
+                    <div class="flex-1 flex flex-col gap-3 p-10">
+                        <h3 class="text-xl font-bold">Laboratorios</h3>
+                        <p>
+                            La innovación al servicio de la educación. Contamos con laboratorios de última generación
+                            para la experimentación científica, preparando a nuestros estudiantes para los desafíos del
+                            futuro.
+                        </p>
                     </div>
                 </div>
 
-                <!-- Gallery Item 3 -->
-                <div class="gallery-item rounded-xl overflow-hidden shadow-md cursor-pointer relative group">
-                    <img src="./assets/img/karate.jpg" alt="Actividades deportivas"
-                        class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
-                    <div
-                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                        <div class="text-white text-center p-4">
-                            <h3 class="text-xl font-bold mb-2">Deportes</h3>
-                            <p>Instalaciones para desarrollo físico y competencias</p>
-                        </div>
+                <div class="flex md:flex-row gap-4">
+                    <picture class="flex-1 ">
+                        <img src="./assets/img/karate.jpg" alt="Actividades deportivas"
+                            class="rounded-2xl w-full h-full object-cover">
+                    </picture>
+                    <div class="flex-1 flex flex-col gap-3 p-10">
+                        <h3 class="text-xl font-bold">Deportes</h3>
+                        <p>
+                            Formación integral a través de la disciplina deportiva. Promovemos el liderazgo, el espíritu
+                            de equipo y la perseverancia en instalaciones de primer nivel.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="flex md:flex-row gap-4">
+                    <picture class="flex-1">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                            alt="Actividades artísticas" class="rounded-2xl w-full h-full object-cover">
+                    </picture>
+                    <div class="flex-1 flex flex-col gap-3 bg-[#174775] rounded-2xl p-10 text-white">
+                        <h3 class="text-xl font-bold">Arte y Cultura</h3>
+                        <p>
+                            Programas que cultivan la creatividad y el pensamiento crítico. Un espacio para la expresión
+                            personal y el aprecio por las diversas manifestaciones artísticas.
+                        </p>
                     </div>
                 </div>
 
-                <!-- Gallery Item 4 -->
-                <div class="gallery-item rounded-xl overflow-hidden shadow-md cursor-pointer relative group">
-                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
-                        alt="Actividades artísticas"
-                        class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
-                    <div
-                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                        <div class="text-white text-center p-4">
-                            <h3 class="text-xl font-bold mb-2">Arte y Cultura</h3>
-                            <p>Programas para desarrollar la creatividad y expresión artística</p>
-                        </div>
+                <div class="flex md:flex-row gap-4">
+                    <picture class="flex-1">
+                        <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Tecnología educativa" class="rounded-2xl w-full h-full object-cover">
+                    </picture>
+                    <div class="flex-1 flex flex-col gap-4 p-10 rounded-2xl bg-[#174775] text-white">
+                        <h3 class="text-xl font-bold mb-2">Tecnología</h3>
+                        <p>
+                            Herramientas digitales para una educación del siglo XXI. Aulas equipadas con lo último en
+                            tecnología garantizan un aprendizaje innovador y eficaz.
+                        </p>
                     </div>
                 </div>
 
-                <!-- Gallery Item 5 -->
-                <div class="gallery-item rounded-xl overflow-hidden shadow-md cursor-pointer relative group">
-                    <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Tecnología educativa"
-                        class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
-                    <div
-                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                        <div class="text-white text-center p-4">
-                            <h3 class="text-xl font-bold mb-2">Tecnología</h3>
-                            <p>Aulas equipadas con lo último en herramientas digitales</p>
-                        </div>
+                <div class="flex md:flex-row gap-4">
+                    <picture class="flex-1">
+                        <img src="./assets/img/comunidad_estudiantil.webp" alt="Comunidad estudiantil"
+                            class="rounded-2xl w-full h-full object-cover">
+                    </picture>
+                    <div class="flex flex-1 flex-col gap-3 p-10">
+                        <h3 class="text-xl font-bold">Comunidad</h3>
+                        <p>
+                            Un entorno de respeto y crecimiento mutuo. Fomentamos un ambiente inclusivo y de apoyo que
+                            impulsa el éxito académico y el desarrollo personal de cada estudiante.
+                        </p>
                     </div>
-                </div>
-
-                <!-- Gallery Item 6 -->
-                <div class="gallery-item rounded-xl overflow-hidden shadow-md cursor-pointer relative group">
-                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                        alt="Comunidad estudiantil"
-                        class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
-                    <div
-                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                        <div class="text-white text-center p-4">
-                            <h3 class="text-xl font-bold mb-2">Comunidad</h3>
-                            <p>Ambiente inclusivo y de apoyo mutuo</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Lightbox Modal -->
-            <div id="lightbox"
-                class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
-                <div class="relative w-full max-w-4xl">
-                    <button id="close-lightbox" class="absolute -top-12 right-0 text-white text-3xl">
-                        <i class="fas fa-times"></i>
-                    </button>
-                    <img id="lightbox-img" src="" alt="" class="w-full rounded-lg">
-                    <div id="lightbox-caption" class="text-white text-center mt-4 text-lg"></div>
-                    <button id="prev-btn"
-                        class="absolute left-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-4 rounded-r-lg">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button id="next-btn"
-                        class="absolute right-0 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 text-white p-4 rounded-l-lg">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
                 </div>
             </div>
         </div>
@@ -520,7 +509,7 @@
     <!-- Contact Section Unificada -->
     <section id="contacto" class="bg-gray-50">
         <!-- Header de la sección -->
-        <div class="container mx-auto px-4 pt-20 pb-10">
+        <div class="container mx-auto px-4 pt-20 pb-20">
             <div class="text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Contáctanos</h2>
                 <div class="w-20 h-1 bg-accent mx-auto mb-6"></div>
@@ -658,10 +647,9 @@
             </div>
         </div>
 
-        <!-- Call to Action adicional -->
-        <div class="container mx-auto px-4 pb-20">
+        <div class="container  mx-auto px-4 pb-10">
             <div
-                class="bg-[#174775] bg-gradient-to-r from-primary to-[#62E3F3]/60 rounded-2xl p-8 text-center text-white shadow-2xl">
+                class="card-contact-fade-down opacity-0 translate-y-1/2 hover:scale-105 transition-all duration-500 ease-in-out bg-[#174775] bg-gradient-to-r from-primary to-[#62E3F3]/60 rounded-2xl p-8 text-center text-white shadow-2xl">
                 <h3 class="text-2xl md:text-3xl font-bold mb-4">¿Listo para formar parte de nuestra comunidad?</h3>
                 <p class="text-lg mb-6 opacity-90">
                     Agenda una visita a nuestro campus y conoce de cerca nuestra propuesta educativa

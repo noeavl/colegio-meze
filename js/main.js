@@ -15,79 +15,6 @@ mobileLinks.forEach(link => {
     });
 });
 
-// Gallery lightbox functionality
-const galleryItems = document.querySelectorAll('.gallery-item');
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.getElementById('lightbox-img');
-const lightboxCaption = document.getElementById('lightbox-caption');
-const closeLightbox = document.getElementById('close-lightbox');
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
-
-let currentImageIndex = 0;
-const images = [];
-const captions = [];
-
-// Prepare images and captions arrays
-galleryItems.forEach((item, index) => {
-    const img = item.querySelector('img');
-    const caption = item.querySelector('div div h3').textContent + ' - ' + item.querySelector('div div p').textContent;
-
-    images.push(img.src);
-    captions.push(caption);
-
-    item.addEventListener('click', () => {
-        currentImageIndex = index;
-        openLightbox();
-    });
-});
-
-function openLightbox() {
-    lightboxImg.src = images[currentImageIndex];
-    lightboxCaption.textContent = captions[currentImageIndex];
-    lightbox.classList.remove('hidden');
-    document.body.style.overflow = 'hidden';
-}
-
-function closeLightboxFunc() {
-    lightbox.classList.add('hidden');
-    document.body.style.overflow = 'auto';
-}
-
-function showPrevImage() {
-    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-    lightboxImg.src = images[currentImageIndex];
-    lightboxCaption.textContent = captions[currentImageIndex];
-}
-
-function showNextImage() {
-    currentImageIndex = (currentImageIndex + 1) % images.length;
-    lightboxImg.src = images[currentImageIndex];
-    lightboxCaption.textContent = captions[currentImageIndex];
-}
-
-closeLightbox.addEventListener('click', closeLightboxFunc);
-prevBtn.addEventListener('click', showPrevImage);
-nextBtn.addEventListener('click', showNextImage);
-lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) {
-        closeLightboxFunc();
-    }
-});
-
-// Keyboard navigation for lightbox
-document.addEventListener('keydown', (e) => {
-    if (!lightbox.classList.contains('hidden')) {
-        if (e.key === 'Escape') {
-            closeLightboxFunc();
-        } else if (e.key === 'ArrowLeft') {
-            showPrevImage();
-        } else if (e.key === 'ArrowRight') {
-            showNextImage();
-        }
-    }
-});
-
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -159,10 +86,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-/*Animaciones de texto*/
-
 document.addEventListener('DOMContentLoaded', function () {
     const cardProgram = document.querySelectorAll('.fade-down')
+    const cardContact = document.querySelectorAll('.card-contact-fade-down')
     const cardFadeLeft = document.querySelectorAll('.card-fade-left')
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -170,6 +96,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (entry.target.classList.contains('fade-down')) {
                     entry.target.classList.remove('translate-y-1/5')
                     entry.target.classList.add('opacity-100', 'ease-in-out')
+                } else if (entry.target.classList.contains('card-contact-fade-down')) {
+                    entry.target.classList.replace('translate-y-1/2', 'translate-y-0')
+                    entry.target.classList.replace('opacity-0', 'opacity-100')
                 } else {
                     entry.target.classList.remove('translate-x-1/2')
                     entry.target.classList.add('translate-x-0', 'opacity-100')
@@ -178,6 +107,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (entry.target.classList.contains('fade-down')) {
                     entry.target.classList.add('translate-y-1/5')
                     entry.target.classList.remove('opacity-100', 'ease-in-out')
+                } else if (entry.target.classList.contains('card-contact-fade-down')) {
+                    entry.target.classList.replace('opacity-100', 'opacity-0')
+                    entry.target.classList.replace('translate-y-0', 'translate-y-1/2')
                 } else {
                     entry.target.classList.remove('opacity-100', 'translate-x-0', 'ease-in-out')
                 }
@@ -193,7 +125,13 @@ document.addEventListener('DOMContentLoaded', function () {
     cardFadeLeft.forEach(card => {
         observer.observe(card)
     })
+
+    cardContact.forEach(card => {
+        observer.observe(card)
+    })
 })
+
+
 
 
 document.querySelectorAll('.program-toggle').forEach(button => {
