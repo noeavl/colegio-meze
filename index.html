@@ -284,7 +284,7 @@
                         <div
                             class="relative bg-white rounded-3xl p-4 shadow-2xl transform group-hover:scale-105 transition-all duration-500">
                             <img src="./assets/img/nuestramision.webp" alt="Estudiantes trabajando en equipo"
-                                class="rounded-2xl w-full h-auto object-cover">
+                                class="rounded-2xl w-full h-full object-cover">
                         </div>
                         <div
                             class="absolute -top-4 -right-4 w-8 h-8 bg-[#62E3F3] rounded-full opacity-80 animate-pulse">
@@ -400,142 +400,143 @@
 
     <!-- Programs Section -->
     <section id="programas" class="p-20 bg-[#174775] bg-gradient-to-r  to-cyan-400">
-        <div class="flex flex-col items-center lg:flex-row gap-5 container mx-auto">
-
-            <div class="flex-1 flex flex-col items-end gap-5 h-full">
-
-                <div
-                    class="flex-1 card-fade-left transition-all hover:scale-105 duration-600 ease-in-out text-start bg-white p-10 rounded-xl shadow-2xl">
-                    <h2 class="text-3xl font-bold mb-10">
-                        Nuestra Oferta
-                        <span class="text-[#62E3F3] border-b-4">Educativa</span>
-                    </h2>
-                    <p class="text-lg text-gray-600">
-                        Ofrecemos una educación integral desde preescolar hasta bachillerato, con programas diseñados
-                        para acompañar cada etapa del desarrollo y preparar a nuestros estudiantes para los retos del
-                        futuro.
-                    </p>
-                </div>
-
+        <div class="flex flex-col items-center gap-5 container mx-auto">
+            <div
+                class="card-fade-left transition-all hover:scale-105 duration-600 ease-in-out text-center bg-white p-10 rounded-xl shadow-2xl">
+                <h2 class="text-xl font-bold mb-5">
+                    Nuestra Oferta
+                    <span class="text-[#62E3F3] border-b-4">Educativa</span>
+                </h2>
+                <p class="text-lg text-gray-600 lg:w-1/2 mx-auto">
+                    Ofrecemos una educación integral desde preescolar hasta bachillerato, con programas diseñados
+                    para acompañar cada etapa del desarrollo y preparar a nuestros estudiantes para los retos del
+                    futuro.
+                </p>
+            </div>
+            <div class="flex flex-row md:flex-col lg:flex-row gap-5">
                 <div class="flex-1 card-fade-left transition-all duration-600 hidden md:block hover:scale-105">
                     <img class="w-full h-full object-cover rounded-xl shadow-2xl border-8 border-white"
                         src="./assets/img/colegio-meze.webp" alt="Colegio MEZE">
                 </div>
+                <!-- Contenedor derecho: Grid de programas -->
+                <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-5">
+
+                    <!-- Program 1 -->
+                    <div
+                        class="min-h-[200px] program-item fade-down flex flex-col lg:flex-row bg-white rounded-xl hover:scale-105 overflow-hidden shadow-2xl hover:shadow-xl transition-all duration-600 active">
+                        <picture class="h-1/2 lg:h-auto lg:w-1/4">
+                            <img src="./assets/img/preescolar.webp" alt="Educación preescolar"
+                                class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        </picture>
+                        <div class="h-1/2 lg:h-auto lg:w-3/4 program-container flex flex-col justify-center p-10 gap-3">
+                            <div class="flex justify-between">
+                                <div class="flex items-center justify-center gap-3">
+                                    <div class="flex flex-col text-xl font-bold">
+                                        <h3>Educación Preescolar</h3>
+                                        <p class="text-[#174775]">3 a 5 años</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center cursor-pointer program-toggle">
+                                    <i class="fa-solid fa-chevron-down text-xl text-[#174775]"></i>
+                                </div>
+                            </div>
+                            <div class="program-content overflow-hidden transition-all duration-300">
+                                <p class="text-gray-600">
+                                    Enfocado en el desarrollo de habilidades básicas a través del juego y la
+                                    exploración.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Program 2 -->
+                    <div
+                        class="min-h-[200px] program-item fade-down flex flex-col lg:flex-row hover:scale-105 bg-white rounded-xl overflow-hidden shadow-2xl hover:shadow-xl transition-all duration-600">
+                        <picture class="h-1/2 lg:h-auto lg:w-1/4">
+                            <img src="./assets/img/primaria.webp" alt="Educación Primaria"
+                                class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        </picture>
+                        <div class="h-1/2 lg:h-auto lg:w-3/4 program-container flex flex-col justify-center p-10">
+                            <div class="flex justify-between">
+                                <div class="flex items-center justify-center">
+                                    <div class="flex flex-col text-xl font-bold">
+                                        <h3>Educación Primaria</h3>
+                                        <span class="text-[#174775]">6 a 12 años</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center cursor-pointer program-toggle">
+                                    <i class="fa-solid fa-chevron-right text-xl text-[#174775]"></i>
+                                </div>
+                            </div>
+                            <div class="program-content max-h-0 overflow-hidden transition-all duration-300">
+                                <p class="text-gray-600">
+                                    Formación integral para niños con énfasis en pensamiento crítico, creatividad y
+                                    valores.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Program 3 -->
+                    <div
+                        class="min-h-[200px] program-item fade-down flex flex-col lg:flex-row hover:scale-105 bg-white rounded-xl overflow-hidden shadow-2xl hover:shadow-xl transition-all duration-600">
+                        <picture class="h-1/2 lg:h-auto lg:w-1/4">
+                            <img src="./assets/img/secundaria.webp" alt="Educación Secundaria"
+                                class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        </picture>
+                        <div class="h-1/2 lg:h-auto lg:w-3/4 program-container flex flex-col justify-center p-10">
+                            <div class="flex justify-between">
+                                <div class="flex items-center justify-center">
+                                    <div class="flex flex-col text-xl font-bold">
+                                        <h3>Educación Secundaria</h3>
+                                        <span class="text-[#174775]">12 a 15 años</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center cursor-pointer program-toggle">
+                                    <i class="fa-solid fa-chevron-right text-xl text-[#174775]"></i>
+                                </div>
+                            </div>
+                            <div class="program-content max-h-0 overflow-hidden transition-all duration-300">
+                                <p class="text-gray-600">
+                                    Preparación académica rigurosa para adolescentes, con orientación vocacional y
+                                    desarrollo de liderazgo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Program 4 -->
+                    <div
+                        class="min-h-[200px] program-item fade-down flex flex-col lg:flex-row hover:scale-105 bg-white rounded-xl overflow-hidden shadow-2xl hover:shadow-xl transition-all duration-600">
+                        <picture class="h-1/2 lg:h-auto lg:w-1/4">
+                            <img src="./assets/img/bachillerato.webp" alt="Bachillerato"
+                                class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        </picture>
+                        <div class="h-1/2 lg:h-auto lg:w-3/4 program-container flex flex-col justify-center p-8">
+                            <div class="flex justify-between">
+                                <div class="flex items-center justify-center">
+                                    <div class="flex flex-col text-xl font-bold">
+                                        <h3>Bachillerato</h3>
+                                        <span class="text-[#174775]">15 a 18 años</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center cursor-pointer program-toggle">
+                                    <i class="fa-solid fa-chevron-right text-xl text-[#174775]"></i>
+                                </div>
+                            </div>
+                            <div class="program-content max-h-0 overflow-hidden transition-all duration-300">
+                                <p class="text-gray-600">
+                                    Preparación integral para la universidad con énfasis en excelencia académica,
+                                    liderazgo
+                                    y orientación vocacional.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Contenedor derecho: Grid de programas -->
-            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-5">
 
-                <!-- Program 1 -->
-                <div
-                    class="min-h-[200px] program-item fade-down flex flex-col lg:flex-row bg-white rounded-xl hover:scale-105 overflow-hidden shadow-2xl hover:shadow-xl transition-all duration-600 active">
-                    <picture class="h-1/2 lg:h-auto lg:w-1/4">
-                        <img src="./assets/img/preescolar.webp" alt="Educación preescolar"
-                            class="w-full h-full object-cover transition duration-500 hover:scale-105">
-                    </picture>
-                    <div class="h-1/2 lg:h-auto lg:w-3/4 program-container flex flex-col justify-center p-10 gap-3">
-                        <div class="flex justify-between">
-                            <div class="flex items-center justify-center gap-3">
-                                <div class="flex flex-col text-xl font-bold">
-                                    <h3>Educación Preescolar</h3>
-                                    <p class="text-[#174775]">3 a 5 años</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center cursor-pointer program-toggle">
-                                <i class="fa-solid fa-chevron-down text-xl text-[#174775]"></i>
-                            </div>
-                        </div>
-                        <div class="program-content overflow-hidden transition-all duration-300">
-                            <p class="text-gray-600">
-                                Enfocado en el desarrollo de habilidades básicas a través del juego y la exploración.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Program 2 -->
-                <div
-                    class="min-h-[200px] program-item fade-down flex flex-col lg:flex-row hover:scale-105 bg-white rounded-xl overflow-hidden shadow-2xl hover:shadow-xl transition-all duration-600">
-                    <picture class="h-1/2 lg:h-auto lg:w-1/4">
-                        <img src="./assets/img/primaria.webp" alt="Educación Primaria"
-                            class="w-full h-full object-cover transition duration-500 hover:scale-105">
-                    </picture>
-                    <div class="h-1/2 lg:h-auto lg:w-3/4 program-container flex flex-col justify-center p-10">
-                        <div class="flex justify-between">
-                            <div class="flex items-center justify-center">
-                                <div class="flex flex-col text-xl font-bold">
-                                    <h3>Educación Primaria</h3>
-                                    <span class="text-[#174775]">6 a 12 años</span>
-                                </div>
-                            </div>
-                            <div class="flex items-center cursor-pointer program-toggle">
-                                <i class="fa-solid fa-chevron-right text-xl text-[#174775]"></i>
-                            </div>
-                        </div>
-                        <div class="program-content max-h-0 overflow-hidden transition-all duration-300">
-                            <p class="text-gray-600">
-                                Formación integral para niños con énfasis en pensamiento crítico, creatividad y valores.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Program 3 -->
-                <div
-                    class="min-h-[200px] program-item fade-down flex flex-col lg:flex-row hover:scale-105 bg-white rounded-xl overflow-hidden shadow-2xl hover:shadow-xl transition-all duration-600">
-                    <picture class="h-1/2 lg:h-auto lg:w-1/4">
-                        <img src="./assets/img/secundaria.webp" alt="Educación Secundaria"
-                            class="w-full h-full object-cover transition duration-500 hover:scale-105">
-                    </picture>
-                    <div class="h-1/2 lg:h-auto lg:w-3/4 program-container flex flex-col justify-center p-10">
-                        <div class="flex justify-between">
-                            <div class="flex items-center justify-center">
-                                <div class="flex flex-col text-xl font-bold">
-                                    <h3>Educación Secundaria</h3>
-                                    <span class="text-[#174775]">12 a 15 años</span>
-                                </div>
-                            </div>
-                            <div class="flex items-center cursor-pointer program-toggle">
-                                <i class="fa-solid fa-chevron-right text-xl text-[#174775]"></i>
-                            </div>
-                        </div>
-                        <div class="program-content max-h-0 overflow-hidden transition-all duration-300">
-                            <p class="text-gray-600">
-                                Preparación académica rigurosa para adolescentes, con orientación vocacional y
-                                desarrollo de liderazgo.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Program 4 -->
-                <div
-                    class="min-h-[200px] program-item fade-down flex flex-col lg:flex-row hover:scale-105 bg-white rounded-xl overflow-hidden shadow-2xl hover:shadow-xl transition-all duration-600">
-                    <picture class="h-1/2 lg:h-auto lg:w-1/4">
-                        <img src="./assets/img/bachillerato.webp" alt="Bachillerato"
-                            class="w-full h-full object-cover transition duration-500 hover:scale-105">
-                    </picture>
-                    <div class="h-1/2 lg:h-auto lg:w-3/4 program-container flex flex-col justify-center p-8">
-                        <div class="flex justify-between">
-                            <div class="flex items-center justify-center">
-                                <div class="flex flex-col text-xl font-bold">
-                                    <h3>Bachillerato</h3>
-                                    <span class="text-[#174775]">15 a 18 años</span>
-                                </div>
-                            </div>
-                            <div class="flex items-center cursor-pointer program-toggle">
-                                <i class="fa-solid fa-chevron-right text-xl text-[#174775]"></i>
-                            </div>
-                        </div>
-                        <div class="program-content max-h-0 overflow-hidden transition-all duration-300">
-                            <p class="text-gray-600">
-                                Preparación integral para la universidad con énfasis en excelencia académica, liderazgo
-                                y orientación vocacional.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -893,12 +894,10 @@
             </div>
         </div>
     </section>
-
     <!-- Footer (simplificado para el ejemplo) -->
     <footer class="bg-white border-t border-gray-200">
         <div class="container mx-auto px-4 py-8">
             <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-6">
-                <!-- Enlaces rápidos -->
                 <div class="flex flex-wrap justify-center gap-4 md:justify-start">
                     <a href="#inicio"
                         class="text-gray-600 hover:text-[#62E3F3] hover:underline underline-offset-4 transition-colors duration-500 font-medium">Inicio</a>
