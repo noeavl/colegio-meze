@@ -258,38 +258,44 @@
     </section>
 
     <!-- Programs Section -->
-    <section id="programas" class="py-20 bg-[#174775] bg-gradient-to-r from-primary to-[#62E3F3]">
-        <div class="flex flex-col items-center md:flex-row gap-5 container mx-auto px-4">
-            <div class="md:w-1/2 flex flex-col items-end gap-5">
+    <section id="programas" class="py-20 bg-[#174775] bg-gradient-to-r  to-cyan-400">
+        <div class="flex flex-col items-center lg:flex-row gap-5 container mx-auto">
+
+            <!-- Contenedor de la izquierda con flex-1 y altura uniforme -->
+            <div class="flex-1 flex flex-col items-end gap-5 h-full">
+
+                <!-- Primera tarjeta: Oferta Educativa -->
                 <div
-                    class="card-fade-left opacity-0 -translate-x-1/2 transition-all hover:scale-105 duration-600 ease-in-out text-start bg-white p-10 rounded-xl shadow-2xl">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-10">
+                    class="flex-1 card-fade-left transition-all hover:scale-105 duration-600 ease-in-out text-start bg-white p-10 rounded-xl shadow-2xl">
+                    <h2 class="text-3xl font-bold mb-10">
                         Nuestra Oferta
                         <span class="text-[#62E3F3] border-b-4">Educativa</span>
                     </h2>
-                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    <p class="text-lg text-gray-600">
                         Ofrecemos una educación integral desde preescolar hasta bachillerato, con programas diseñados
-                        para
-                        acompañar cada etapa del desarrollo y preparar a nuestros estudiantes para los retos del futuro.
+                        para acompañar cada etapa del desarrollo y preparar a nuestros estudiantes para los retos del
+                        futuro.
                     </p>
                 </div>
-                <div
-                    class="card-fade-left opacity-0 -translate-x-1/2 transition-all duration-600 w-3/4 hidden md:block hover:scale-105">
-                    <img class="size-full object-cover rounded-xl shadow-2xl" src="./assets/img/colegio-meze.webp"
+
+                <!-- Segunda tarjeta: Imagen -->
+                <div class="flex-1 card-fade-left transition-all duration-600 hidden md:block hover:scale-105">
+                    <img class="w-full h-full object-cover rounded-xl shadow-2xl" src="./assets/img/colegio-meze.webp"
                         alt="Colegio MEZE">
                 </div>
             </div>
 
-            <div class="md:w-1/2 flex flex-col gap-5">
+            <!-- Contenedor derecho: Grid de programas -->
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-5">
 
                 <!-- Program 1 -->
                 <div
-                    class="program-item fade-down opacity-0 translate-y-1/5 flex flex-col md:flex-row bg-white rounded-xl hover:scale-105 overflow-hidden shadow-2xl hover:shadow-xl transition-all duration-600 active">
-                    <div class="md:w-1/4 overflow-hidden">
+                    class="min-h-[200px] program-item fade-down flex flex-col lg:flex-row bg-white rounded-xl hover:scale-105 overflow-hidden shadow-2xl hover:shadow-xl transition-all duration-600 active">
+                    <picture class="h-1/2 lg:h-auto lg:w-1/4">
                         <img src="./assets/img/preescolar.webp" alt="Educación preescolar"
                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
-                    </div>
-                    <div class="program-container flex flex-col justify-center md:w-3/4 p-10 gap-3">
+                    </picture>
+                    <div class="h-1/2 lg:h-auto lg:w-3/4 program-container flex flex-col justify-center p-10 gap-3">
                         <div class="flex justify-between">
                             <div class="flex items-center justify-center gap-3">
                                 <div class="flex flex-col text-xl font-bold">
@@ -298,7 +304,7 @@
                                 </div>
                             </div>
                             <div class="flex items-center cursor-pointer program-toggle">
-                                <i class="fa-solid fa-chevron-down fa-xl text-[#174775]"></i>
+                                <i class="fa-solid fa-chevron-down text-xl text-[#174775]"></i>
                             </div>
                         </div>
                         <div class="program-content overflow-hidden transition-all duration-300">
@@ -311,12 +317,12 @@
 
                 <!-- Program 2 -->
                 <div
-                    class="program-item fade-down opacity-0 translate-y-1/5 flex flex-col md:flex-row hover:scale-105 bg-white rounded-xl overflow-hidden shadow-2xl hover:shadow-xl transition-all duration-600">
-                    <div class="md:w-1/4 overflow-hidden">
+                    class="min-h-[200px] program-item fade-down flex flex-col lg:flex-row hover:scale-105 bg-white rounded-xl overflow-hidden shadow-2xl hover:shadow-xl transition-all duration-600">
+                    <picture class="h-1/2 lg:h-auto lg:w-1/4">
                         <img src="./assets/img/primaria.webp" alt="Educación Primaria"
                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
-                    </div>
-                    <div class="program-container flex flex-col justify-center md:w-3/4 p-10">
+                    </picture>
+                    <div class="h-1/2 lg:h-auto lg:w-3/4 program-container flex flex-col justify-center p-10">
                         <div class="flex justify-between">
                             <div class="flex items-center justify-center">
                                 <div class="flex flex-col text-xl font-bold">
@@ -325,11 +331,10 @@
                                 </div>
                             </div>
                             <div class="flex items-center cursor-pointer program-toggle">
-                                <i class="fa-solid fa-chevron-right fa-xl text-[#174775]"></i>
+                                <i class="fa-solid fa-chevron-right text-xl text-[#174775]"></i>
                             </div>
                         </div>
-                        <div class="program-content max-h-0 overflow-hidden transition-all duration-300"
-                            style="max-height: 0px;">
+                        <div class="program-content max-h-0 overflow-hidden transition-all duration-300">
                             <p class="text-gray-600">
                                 Formación integral para niños con énfasis en pensamiento crítico, creatividad y valores.
                             </p>
@@ -339,12 +344,12 @@
 
                 <!-- Program 3 -->
                 <div
-                    class="program-item fade-down opacity-0 translate-y-1/5 flex flex-col md:flex-row hover:scale-105 bg-white rounded-xl overflow-hidden shadow-2xl hover:shadow-xl transition-all duration-600">
-                    <div class="md:w-1/4 overflow-hidden">
+                    class="min-h-[200px] program-item fade-down flex flex-col lg:flex-row hover:scale-105 bg-white rounded-xl overflow-hidden shadow-2xl hover:shadow-xl transition-all duration-600">
+                    <picture class="h-1/2 lg:h-auto lg:w-1/4">
                         <img src="./assets/img/secundaria.webp" alt="Educación Secundaria"
                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
-                    </div>
-                    <div class="program-container flex flex-col justify-center md:w-3/4 p-10">
+                    </picture>
+                    <div class="h-1/2 lg:h-auto lg:w-3/4 program-container flex flex-col justify-center p-10">
                         <div class="flex justify-between">
                             <div class="flex items-center justify-center">
                                 <div class="flex flex-col text-xl font-bold">
@@ -353,11 +358,10 @@
                                 </div>
                             </div>
                             <div class="flex items-center cursor-pointer program-toggle">
-                                <i class="fa-solid fa-chevron-right fa-xl text-[#174775]"></i>
+                                <i class="fa-solid fa-chevron-right text-xl text-[#174775]"></i>
                             </div>
                         </div>
-                        <div class="program-content max-h-0 overflow-hidden transition-all duration-300"
-                            style="max-height: 0px;">
+                        <div class="program-content max-h-0 overflow-hidden transition-all duration-300">
                             <p class="text-gray-600">
                                 Preparación académica rigurosa para adolescentes, con orientación vocacional y
                                 desarrollo de liderazgo.
@@ -368,12 +372,12 @@
 
                 <!-- Program 4 -->
                 <div
-                    class="program-item fade-down opacity-0 translate-y-1/5 flex flex-col md:flex-row hover:scale-105 bg-white rounded-xl overflow-hidden shadow-2xl hover:shadow-xl transition-all duration-600">
-                    <div class="md:w-1/4 overflow-hidden">
+                    class="min-h-[200px] program-item fade-down flex flex-col lg:flex-row hover:scale-105 bg-white rounded-xl overflow-hidden shadow-2xl hover:shadow-xl transition-all duration-600">
+                    <picture class="h-1/2 lg:h-auto lg:w-1/4">
                         <img src="./assets/img/bachillerato.webp" alt="Bachillerato"
                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
-                    </div>
-                    <div class="program-container flex flex-col justify-center md:w-3/4 p-10">
+                    </picture>
+                    <div class="h-1/2 lg:h-auto lg:w-3/4 program-container flex flex-col justify-center p-8">
                         <div class="flex justify-between">
                             <div class="flex items-center justify-center">
                                 <div class="flex flex-col text-xl font-bold">
@@ -382,11 +386,10 @@
                                 </div>
                             </div>
                             <div class="flex items-center cursor-pointer program-toggle">
-                                <i class="fa-solid fa-chevron-right fa-xl text-[#174775]"></i>
+                                <i class="fa-solid fa-chevron-right text-xl text-[#174775]"></i>
                             </div>
                         </div>
-                        <div class="program-content max-h-0 overflow-hidden transition-all duration-300"
-                            style="max-height: 0px;">
+                        <div class="program-content max-h-0 overflow-hidden transition-all duration-300">
                             <p class="text-gray-600">
                                 Preparación integral para la universidad con énfasis en excelencia académica, liderazgo
                                 y orientación vocacional.
@@ -412,14 +415,14 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
-                <div class="flex flex-col md:flex-row shadow-xl rounded-2xl">
+                <div class="flex flex-col lg:flex-row shadow-xl rounded-2xl">
                     <picture class="flex-1">
                         <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
                             alt="Biblioteca moderna"
-                            class="rounded-t-2xl md:rounded-none md:rounded-l-2xl w-full h-full object-cover">
+                            class="rounded-t-2xl lg:rounded-none lg:rounded-l-2xl w-full h-full object-cover">
                     </picture>
                     <div
-                        class="flex-1 flex flex-col gap-3 bg-[#174775] rounded-b-2xl md:rounded-none md:rounded-r-2xl p-10">
+                        class="flex-1 flex flex-col gap-3 bg-[#174775] rounded-b-2xl lg:rounded-none lg:rounded-r-2xl p-10">
                         <h3 class="text-white font-bold text-xl">Biblioteca</h3>
                         <p class="text-white text-base">
                             Un <span class="font-bold">centro de investigación</span> y conocimiento avanzado. Con más
@@ -433,7 +436,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col md:flex-row gap-4">
+                <div class="flex flex-col lg:flex-row gap-4">
                     <picture class="flex-1">
                         <img src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
                             alt="Laboratorio de ciencias" class="rounded-2xl w-full h-full object-cover">
@@ -448,7 +451,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col md:flex-row md:gap-4">
+                <div class="flex flex-col lg:flex-row md:gap-4">
                     <picture class="flex-1">
                         <img src="./assets/img/karate.jpg" alt="Actividades deportivas"
                             class="md:rounded-2xl w-full h-full object-cover rounded-t-2xl">
@@ -461,17 +464,16 @@
                             de equipo y la perseverancia en instalaciones de primer nivel.
                         </p>
                     </div>
-
                 </div>
 
-                <div class="flex flex-col md:flex-row md:rounded-2xl md:shadow-xl">
+                <div class="flex flex-col lg:flex-row lg:rounded-2xl lg:shadow-xl">
                     <picture class="flex-1">
                         <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
                             alt="Actividades artísticas"
-                            class="rounded-2xl md:rounded-none md:rounded-l-2xl w-full h-full object-cover">
+                            class="rounded-t-2xl rounded-b-2xl md:rounded-b-none lg:rounded-br-none lg:rounded-l-2xl lg:rounded-t-none w-full h-full object-cover">
                     </picture>
                     <div
-                        class="flex-1 flex flex-col gap-3 bg-transparent md:bg-[#174775] rounded-r-2xl p-10 text-black md:text-white">
+                        class="flex-1 flex flex-col gap-3 md:bg-[#174775] rounded-b-2xl lg:rounded-r-2xl lg:rounded-bl-none p-10 md:text-white">
                         <h3 class="text-xl font-bold">Arte y Cultura</h3>
                         <p>
                             Programas que cultivan la creatividad y el pensamiento crítico. Un espacio para la expresión
@@ -480,14 +482,14 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col md:flex-row shadow-xl rounded-2xl">
+                <div class="flex flex-col lg:flex-row shadow-xl rounded-2xl">
                     <picture class="flex-1">
                         <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="Tecnología educativa"
-                            class="rounded-t-2xl md:rounded-none md:rounded-l-2xl w-full h-full object-cover">
+                            class="rounded-t-2xl lg:rounded-l-2xl lg:rounded-t-none w-full h-full object-cover">
                     </picture>
                     <div
-                        class="flex-1 flex flex-col gap-4 p-10  bg-[#174775] rounded-b-2xl md:rounded-none md:rounded-r-2xl text-white">
+                        class="flex-1 flex flex-col gap-4 p-10  bg-[#174775] rounded-b-2xl lg:rounded-none lg:rounded-r-2xl text-white">
                         <h3 class="text-xl font-bold mb-2">Tecnología</h3>
                         <p>
                             Herramientas digitales para una educación del siglo XXI. Aulas equipadas con lo último en
@@ -496,7 +498,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col md:flex-row gap-4">
+                <div class="flex flex-col lg:flex-row gap-4">
                     <picture class="flex-1">
                         <img src="./assets/img/comunidad_estudiantil.webp" alt="Comunidad estudiantil"
                             class="rounded-2xl w-full h-full object-cover">
