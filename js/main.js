@@ -160,3 +160,36 @@ document.querySelectorAll('.program-toggle').forEach(button => {
         }
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const tituloSecundario = document.querySelector(".typewriter");
+    const parrafo = document.querySelector(
+        "p.text-lg.md\\:text-xl.lg\\:text-2xl"
+    );
+
+    function typeWriter(element, text, speed = 80, callback) {
+        element.textContent = "";
+        element.classList.remove("opacity-0");
+        let i = 0;
+        function escribir() {
+            if (i < text.length) {
+                element.textContent += text.charAt(i);
+                i++;
+                setTimeout(escribir, speed);
+            } else if (callback) {
+                callback();
+            }
+        }
+        escribir();
+    }
+
+    tituloSecundario.classList.add("opacity-0", "transition-opacity", "duration-500");
+    parrafo.classList.add("opacity-0", "translate-y-5", "transition-all", "duration-700");
+
+    typeWriter(tituloSecundario, "COMIENZA CON NOSOTROS", 80, () => {
+        setTimeout(() => {
+            parrafo.classList.remove("opacity-0", "translate-y-5");
+        }, 300);
+    });
+});
