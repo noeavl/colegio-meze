@@ -38,7 +38,7 @@
     </a>
     <div class="h-[100vh] flex flex-col">
         <header class="sticky top-0 z-40 bg-white shadow-sm">
-            <div class="container mx-auto px-4 py-10 flex justify-between items-center">
+            <div class="container mx-auto p-10 flex justify-between items-center">
                 <div class="flex items-center">
                     <a href="#inicio" class="flex items-center">
                         <img src="./assets/img/CM_logo.png" alt="Logo Colegio MEZE" class="w-[150px] h-auto">
@@ -219,8 +219,8 @@
     </section>
 
     <!-- About Us Section -->
-    <!-- About Us Section -->
-    <section id="nosotros" class="relative bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 p-20 overflow-hidden">
+    <section id="nosotros"
+        class="relative bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 p-10 md:p-20 overflow-hidden">
         <!-- Elementos decorativos de fondo -->
         <div class="absolute inset-0 overflow-hidden">
             <div class="absolute -top-10 -left-10 w-40 h-40 bg-[#62E3F3]/10 rounded-full blur-3xl"></div>
@@ -230,20 +230,18 @@
 
         <div class="container mx-auto px-4 relative z-10">
             <!-- Header mejorado -->
-            <div class="text-center mb-20">
+            <div class="text-center mb-10">
                 <h2
-                    class="text-xl md:text-5xl font-black mb-6 bg-gradient-to-r from-[#174775] via-slate-800 to-[#174775] bg-clip-text text-transparent leading-tight">
+                    class="text-xl md:text-5xl font-black mb-6 bg-gradient-to-r from-gray-800 to-[#174775] bg-clip-text text-transparent">
                     Nuestra
                     <span class="relative">
                         <span class="text-[#62E3F3]">Misión</span>
-                        <div
-                            class="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-[#62E3F3] to-cyan-300 rounded-full transform -rotate-1">
-                        </div>
                     </span>
                 </h2>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-[#62E3F3] to-[#174775] mx-auto mb-8 rounded-full"></div>
 
                 <div class="max-w-4xl mx-auto">
-                    <p class="text-xl md:text-lg text-gray-700 leading-relaxed font-light mb-8">
+                    <p class="text-sm md:text-lg text-gray-700 leading-relaxed font-light mb-8">
                         Ser partícipe de la formación de personas <span
                             class="font-semibold text-[#174775]">independientes</span>,
                         comprometidas con la sociedad y con un gran <span class="font-semibold text-[#62E3F3]">sentido
@@ -251,7 +249,7 @@
                     </p>
 
                     <div class="bg-white/70 backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-white/50">
-                        <p class="text-lg text-gray-600 leading-relaxed">
+                        <p class="text-sm md:text-lg text-gray-600 leading-relaxed">
                             Esto a través de brindarles la mejor calidad en herramientas para el desarrollo de sus
                             habilidades
                             basada en una educación con valores, en un ambiente armónico con la guía de un equipo de
@@ -264,9 +262,9 @@
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="flex flex-col gap-10">
-                    <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-1 shadow-xl">
+                    <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-2 shadow-xl">
                         <div class="bg-gradient-to-r from-[#174775] to-[#62E3F3] rounded-xl p-6">
-                            <h3 class="text-3xl md:text-4xl font-bold text-white flex items-center">
+                            <h3 class="text-xl md:text-4xl font-bold text-white flex items-center">
                                 <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
                                     <i class="fas fa-star text-white text-xl"></i>
                                 </div>
@@ -283,7 +281,7 @@
                         </div>
                         <div
                             class="relative bg-white rounded-3xl p-4 shadow-2xl transform group-hover:scale-105 transition-all duration-500">
-                            <img src="./assets/img/nuestramision.webp" alt="Estudiantes trabajando en equipo"
+                            <img src="./assets/img/cm-students.webp" alt="Estudiantes trabajando en equipo"
                                 class="rounded-2xl w-full h-full object-cover">
                         </div>
                         <div
@@ -311,10 +309,11 @@
                                 </div>
                                 <div>
                                     <h4
-                                        class="text-xl font-bold text-gray-800 mb-3 group-hover:text-[#174775] transition-colors">
+                                        class="text-lg md:text-xl font-bold text-gray-800 mb-3 group-hover:text-[#174775] transition-colors">
                                         Excelencia educativa desde el inicio
                                     </h4>
-                                    <p class="text-gray-600 leading-relaxed group-hover:text-gray-700">
+                                    <p
+                                        class="text-sm md:text-base text-gray-600 leading-relaxed group-hover:text-gray-700">
                                         Formación sólida en cada etapa, desde preescolar hasta bachillerato, con
                                         programas
                                         actualizados y docentes comprometidos con el aprendizaje.
@@ -335,10 +334,11 @@
                                 </div>
                                 <div>
                                     <h4
-                                        class="text-xl font-bold text-gray-800 mb-3 group-hover:text-[#174775] transition-colors">
+                                        class="text-lg md:text-xl font-bold text-gray-800 mb-3 group-hover:text-[#174775] transition-colors">
                                         Desarrollo integral del estudiante
                                     </h4>
-                                    <p class="text-gray-600 leading-relaxed group-hover:text-gray-700">
+                                    <p
+                                        class="text-sm md:text-base text-gray-600 leading-relaxed group-hover:text-gray-700">
                                         Fomentamos el crecimiento académico, emocional y social desde la infancia hasta
                                         la
                                         adolescencia, preparando estudiantes seguros y responsables.
@@ -359,10 +359,11 @@
                                 </div>
                                 <div>
                                     <h4
-                                        class="text-xl font-bold text-gray-800 mb-3 group-hover:text-[#174775] transition-colors">
+                                        class="text-lg md:text-xl font-bold text-gray-800 mb-3 group-hover:text-[#174775] transition-colors">
                                         Innovación en el aula
                                     </h4>
-                                    <p class="text-gray-600 leading-relaxed group-hover:text-gray-700">
+                                    <p
+                                        class="text-sm md:text-base text-gray-600 leading-relaxed group-hover:text-gray-700">
                                         Contamos con tecnología de punta y herramientas digitales adaptadas a cada nivel
                                         educativo, promoviendo un aprendizaje activo y significativo.
                                     </p>
@@ -382,10 +383,11 @@
                                 </div>
                                 <div>
                                     <h4
-                                        class="text-xl font-bold text-gray-800 mb-3 group-hover:text-[#174775] transition-colors">
+                                        class="text-lg md:text-xl font-bold text-gray-800 mb-3 group-hover:text-[#174775] transition-colors">
                                         Proyección internacional
                                     </h4>
-                                    <p class="text-gray-600 leading-relaxed group-hover:text-gray-700">
+                                    <p
+                                        class="text-sm md:text-base text-gray-600 leading-relaxed group-hover:text-gray-700">
                                         Ofrecemos programas de enseñanza de idiomas que abren puertas a un mundo de
                                         oportunidades globales para nuestros estudiantes.
                                     </p>
@@ -399,15 +401,16 @@
     </section>
 
     <!-- Programs Section -->
-    <section id="programas" class="p-20 bg-[#174775] bg-gradient-to-r  to-cyan-400">
+    <section id="programas" class="p-10 md:p-20 bg-[#174775] bg-gradient-to-r  to-cyan-400">
         <div class="flex flex-col items-center gap-5 container mx-auto">
             <div
                 class="card-fade-left transition-all hover:scale-105 duration-600 ease-in-out text-center bg-white p-10 rounded-xl shadow-2xl">
-                <h2 class="text-xl font-bold mb-5">
+                <h2 class="text-xl md:text-5xl font-bold mb-5 text-[#174775]">
                     Nuestra Oferta
-                    <span class="text-[#62E3F3] border-b-4">Educativa</span>
+                    <span class="text-[#62E3F3]">Educativa</span>
                 </h2>
-                <p class="text-lg text-gray-600 lg:w-1/2 mx-auto">
+                <div class="w-24 h-1.5 bg-gradient-to-r from-[#62E3F3] to-[#174775] mx-auto mb-8 rounded-full"></div>
+                <p class="text-sm md:text-base text-gray-600 lg:w-1/2 mx-auto">
                     Ofrecemos una educación integral desde preescolar hasta bachillerato, con programas diseñados
                     para acompañar cada etapa del desarrollo y preparar a nuestros estudiantes para los retos del
                     futuro.
@@ -431,7 +434,7 @@
                         <div class="h-1/2 lg:h-auto lg:w-3/4 program-container flex flex-col justify-center p-10 gap-3">
                             <div class="flex justify-between">
                                 <div class="flex items-center justify-center gap-3">
-                                    <div class="flex flex-col text-xl font-bold">
+                                    <div class="flex flex-col text-lg md:text-xl font-bold">
                                         <h3>Educación Preescolar</h3>
                                         <p class="text-[#174775]">3 a 5 años</p>
                                     </div>
@@ -441,7 +444,7 @@
                                 </div>
                             </div>
                             <div class="program-content overflow-hidden transition-all duration-300">
-                                <p class="text-gray-600">
+                                <p class="text-sm md:text-base text-gray-600">
                                     Enfocado en el desarrollo de habilidades básicas a través del juego y la
                                     exploración.
                                 </p>
@@ -459,7 +462,7 @@
                         <div class="h-1/2 lg:h-auto lg:w-3/4 program-container flex flex-col justify-center p-10">
                             <div class="flex justify-between">
                                 <div class="flex items-center justify-center">
-                                    <div class="flex flex-col text-xl font-bold">
+                                    <div class="flex flex-col text-lg md:text-xl font-bold">
                                         <h3>Educación Primaria</h3>
                                         <span class="text-[#174775]">6 a 12 años</span>
                                     </div>
@@ -469,7 +472,7 @@
                                 </div>
                             </div>
                             <div class="program-content max-h-0 overflow-hidden transition-all duration-300">
-                                <p class="text-gray-600">
+                                <p class="text-sm md:text-base text-gray-600">
                                     Formación integral para niños con énfasis en pensamiento crítico, creatividad y
                                     valores.
                                 </p>
@@ -487,7 +490,7 @@
                         <div class="h-1/2 lg:h-auto lg:w-3/4 program-container flex flex-col justify-center p-10">
                             <div class="flex justify-between">
                                 <div class="flex items-center justify-center">
-                                    <div class="flex flex-col text-xl font-bold">
+                                    <div class="flex flex-col text-lg md:text-xl font-bold">
                                         <h3>Educación Secundaria</h3>
                                         <span class="text-[#174775]">12 a 15 años</span>
                                     </div>
@@ -497,7 +500,7 @@
                                 </div>
                             </div>
                             <div class="program-content max-h-0 overflow-hidden transition-all duration-300">
-                                <p class="text-gray-600">
+                                <p class="text-sm md:text-base text-gray-600">
                                     Preparación académica rigurosa para adolescentes, con orientación vocacional y
                                     desarrollo de liderazgo.
                                 </p>
@@ -515,7 +518,7 @@
                         <div class="h-1/2 lg:h-auto lg:w-3/4 program-container flex flex-col justify-center p-8">
                             <div class="flex justify-between">
                                 <div class="flex items-center justify-center">
-                                    <div class="flex flex-col text-xl font-bold">
+                                    <div class="flex flex-col text-lg md:text-xl font-bold">
                                         <h3>Bachillerato</h3>
                                         <span class="text-[#174775]">15 a 18 años</span>
                                     </div>
@@ -525,7 +528,7 @@
                                 </div>
                             </div>
                             <div class="program-content max-h-0 overflow-hidden transition-all duration-300">
-                                <p class="text-gray-600">
+                                <p class="text-sm md:text-base text-gray-600">
                                     Preparación integral para la universidad con énfasis en excelencia académica,
                                     liderazgo
                                     y orientación vocacional.
@@ -541,47 +544,54 @@
     </section>
 
     <!-- Infraestructura Section -->
-    <section id="galeria" class="bg-gray-50">
+    <section id="galeria" class="p-10 md:p-20 bg-gradient-to-br from-gray-50 via-blue-50/30 to-cyan-50/20">
         <div class="container mx-auto px-4">
-            <div class="text-center py-20">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Descubre <span class="text-[#62E3F3]">MEZE</span>
+            <div class="text-center py-16">
+                <h2
+                    class="text-xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-800 to-[#174775] bg-clip-text text-transparent">
+                    Descubre <span class="text-[#62E3F3] drop-shadow-sm">MEZE</span>
                 </h2>
-                <div class="w-20 h-1 bg-[#62E3F3] mx-auto mb-6"></div>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                <div class="w-24 h-1.5 bg-gradient-to-r from-[#62E3F3] to-[#174775] mx-auto mb-8 rounded-full"></div>
+                <p class="text-sm md:text-base text-gray-700 max-w-4xl mx-auto leading-relaxed">
                     Te invitamos a descubrir MEZE y a vivir de cerca la energía, la creatividad y la pasión que definen
                     nuestra comunidad educativa.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
-                <div class="flex flex-col lg:flex-row shadow-xl rounded-2xl">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Biblioteca -->
+                <div
+                    class="group flex flex-col lg:flex-row shadow-2xl rounded-3xl border-4 border-white/80 hover:border-[#62E3F3]/30 transition-all duration-500 hover:shadow-[#62E3F3]/20 hover:-translate-y-2 overflow-hidden">
                     <picture class="flex-1">
                         <img src="./assets/img/biblioteca.webp" alt="Biblioteca moderna"
-                            class="rounded-t-2xl lg:rounded-none lg:rounded-l-2xl w-full h-full object-cover">
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                     </picture>
-                    <div
-                        class="flex-1 flex flex-col gap-3 bg-[#174775] rounded-b-2xl lg:rounded-none lg:rounded-r-2xl p-10">
-                        <h3 class="text-white font-bold text-xl">Biblioteca</h3>
-                        <p class="text-white text-base">
-                            Un <span class="font-bold">centro de investigación</span> y conocimiento avanzado. Con más
-                            de 20,000 volúmenes
-                            y recursos
-                            digitales, es el espacio ideal para la <span class="font-bold">profundización
-                                académica</span> y el desarrollo
-                            de la
-                            <span class="font-bold">autonomía intelectual</span>.
+                    <div class="flex-1 flex flex-col gap-4 bg-gradient-to-br from-[#174775] to-[#1a5187] p-12">
+                        <h3
+                            class="text-white font-bold text-lg md:text-xl w-fit border-b-3 border-[#62E3F3] pb-2 transition-colors duration-300 group-hover:text-[#62E3F3]">
+                            Biblioteca</h3>
+                        <p class="text-sm md:text-base text-white/90 leading-relaxed">
+                            Un centro de investigación y conocimiento
+                            avanzado. Con más
+                            de 20,000 volúmenes y recursos digitales, es el espacio ideal para la profundización
+                            académicay el desarrollo de la
+                            autonomía intelectual.
                         </p>
                     </div>
                 </div>
 
-                <div class="flex flex-col lg:flex-row gap-4">
+                <!-- Laboratorios -->
+                <div class="group flex flex-col lg:flex-row gap-6">
                     <picture class="flex-1">
                         <img src="./assets/img/laboratorios.webp" alt="Laboratorio de ciencias"
-                            class="rounded-2xl shadow-2xl w-full h-full object-cover border-8 border-white">
+                            class="rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 w-full h-full object-cover border-4 border-white/80 group-hover:scale-105 hover:border-[#62E3F3]/30">
                     </picture>
-                    <div class="flex-1 flex flex-col gap-3 p-10">
-                        <h3 class="text-xl font-bold">Laboratorios</h3>
-                        <p>
+                    <div
+                        class="flex-1 flex flex-col gap-4 p-12 bg-white/70 backdrop-blur-sm rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <h3
+                            class="text-lg md:text-xl font-bold border-b-3 border-[#62E3F3] pb-2 w-fit text-[#174775] group-hover:text-[#62E3F3] transition-colors duration-300">
+                            Laboratorios</h3>
+                        <p class="text-sm md:text-base text-gray-700 leading-relaxed">
                             La innovación al servicio de la educación. Contamos con laboratorios de última generación
                             para la experimentación científica, preparando a nuestros estudiantes para los desafíos del
                             futuro.
@@ -589,59 +599,74 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col lg:flex-row md:gap-4">
+                <!-- Deportes -->
+                <div class="group flex flex-col lg:flex-row gap-6">
                     <picture class="flex-1">
                         <img src="./assets/img/karate.webp" alt="Actividades deportivas"
-                            class="md:rounded-2xl w-full h-full object-cover rounded-t-2xl">
+                            class="rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 w-full h-full object-cover border-4 border-white/80 group-hover:scale-105 hover:border-[#62E3F3]/30">
                     </picture>
                     <div
-                        class="flex-1 flex flex-col gap-3 p-10 bg-[#174775] md:bg-transparent md:text-black text-white rounded-b-2xl md:rounded-none">
-                        <h3 class="text-xl font-bold">Deportes</h3>
-                        <p>
+                        class="flex-1 flex flex-col gap-4 p-12 bg-white/70 backdrop-blur-sm rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <h3
+                            class="text-lg md:text-xl font-bold border-b-3 border-[#62E3F3] pb-2 w-fit group-hover:text-[#62E3F3] transition-colors duration-300">
+                            Deportes</h3>
+                        <p class="text-sm md:text-base leading-relaxed">
                             Formación integral a través de la disciplina deportiva. Promovemos el liderazgo, el espíritu
                             de equipo y la perseverancia en instalaciones de primer nivel.
                         </p>
                     </div>
                 </div>
 
-                <div class="flex flex-col lg:flex-row lg:rounded-2xl lg:shadow-xl">
+                <!-- Arte y Cultura -->
+                <div
+                    class="group flex flex-col lg:flex-row rounded-3xl shadow-2xl border-4 border-white/80 hover:border-[#62E3F3]/30 transition-all duration-500 hover:shadow-[#62E3F3]/20 hover:-translate-y-2 overflow-hidden">
                     <picture class="flex-1">
                         <img src="./assets/img/arteycultura.webp" alt="Actividades artísticas"
-                            class="rounded-t-2xl rounded-b-2xl md:rounded-b-none lg:rounded-br-none lg:rounded-l-2xl lg:rounded-t-none w-full h-full object-cover">
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                     </picture>
                     <div
-                        class="flex-1 flex flex-col gap-3 md:bg-[#174775] rounded-b-2xl lg:rounded-r-2xl lg:rounded-bl-none p-10 md:text-white">
-                        <h3 class="text-xl font-bold">Arte y Cultura</h3>
-                        <p>
+                        class="flex-1 flex flex-col gap-4 bg-gradient-to-bl from-[#174775] to-[#1a5187] p-12 text-white">
+                        <h3
+                            class="text-lg md:text-xl font-bold border-b-3 border-[#62E3F3] pb-2 w-fit group-hover:text-[#62E3F3] transition-colors duration-300">
+                            Arte y Cultura</h3>
+                        <p class="text-sm md:text-base text-white/90 leading-relaxed">
                             Programas que cultivan la creatividad y el pensamiento crítico. Un espacio para la expresión
                             personal y el aprecio por las diversas manifestaciones artísticas.
                         </p>
                     </div>
                 </div>
 
-                <div class="flex flex-col lg:flex-row shadow-xl rounded-2xl">
+                <!-- Tecnología -->
+                <div
+                    class="group flex flex-col lg:flex-row shadow-2xl hover:shadow-[#62E3F3]/20 transition-all duration-500 rounded-3xl border-4 border-white/80 hover:border-[#62E3F3]/30 hover:-translate-y-2 overflow-hidden">
                     <picture class="flex-1">
                         <img src="./assets/img/tecnologiaeducativa.webp" alt="Tecnología educativa"
-                            class="rounded-t-2xl lg:rounded-l-2xl lg:rounded-t-none w-full h-full object-cover">
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                     </picture>
                     <div
-                        class="flex-1 flex flex-col gap-4 p-10  bg-[#174775] rounded-b-2xl lg:rounded-none lg:rounded-r-2xl text-white">
-                        <h3 class="text-xl font-bold mb-2">Tecnología</h3>
-                        <p>
+                        class="flex-1 flex flex-col gap-4 p-12 bg-gradient-to-tr from-[#174775] to-[#1a5187] text-white">
+                        <h3
+                            class="text-lg md:text-xl font-bold mb-3 border-b-3 border-[#62E3F3] pb-2 w-fit group-hover:text-[#62E3F3] transition-colors duration-300">
+                            Tecnología</h3>
+                        <p class="text-sm md:text-base text-white/90 leading-relaxed">
                             Herramientas digitales para una educación del siglo XXI. Aulas equipadas con lo último en
                             tecnología garantizan un aprendizaje innovador y eficaz.
                         </p>
                     </div>
                 </div>
 
-                <div class="flex flex-col lg:flex-row gap-4">
+                <!-- Comunidad -->
+                <div class="group flex flex-col lg:flex-row gap-6">
                     <picture class="flex-1">
                         <img src="./assets/img/comunidad_estudiantil.webp" alt="Comunidad estudiantil"
-                            class="rounded-2xl w-full h-full object-cover">
+                            class="rounded-3xl w-full h-full object-cover border-4 border-white/80 shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:scale-105 hover:border-[#62E3F3]/30">
                     </picture>
-                    <div class="flex flex-1 flex-col gap-3 p-10">
-                        <h3 class="text-xl font-bold">Comunidad</h3>
-                        <p>
+                    <div
+                        class="flex flex-1 flex-col gap-4 p-12 bg-white/70 backdrop-blur-sm rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <h3
+                            class="text-lg md:text-xl font-bold border-b-3 border-[#62E3F3] pb-2 w-fit text-[#174775] group-hover:text-[#62E3F3] transition-colors duration-300">
+                            Comunidad</h3>
+                        <p class="text-sm md:text-base text-gray-700 leading-relaxed">
                             Un entorno de respeto y crecimiento mutuo. Fomentamos un ambiente inclusivo y de apoyo que
                             impulsa el éxito académico y el desarrollo personal de cada estudiante.
                         </p>
@@ -651,7 +676,7 @@
         </div>
     </section>
     <!--Words section-->
-    <section class="block-scrolling-text mt-20">
+    <section class="block-scrolling-text">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
@@ -733,25 +758,28 @@
         </div>
     </section>
 
-    <section id="contacto" class="bg-gray-50">
-        <div class="container mx-auto px-4 pt-20 pb-20">
+    <section id="contacto" class="p-10 md:p-20 bg-gray-50">
+        <div class="container mx-auto px-4 pb-20">
             <div class="text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Contáctanos</h2>
-                <div class="w-20 h-1 bg-[#62E3F3] mx-auto mb-6"></div>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                <h2
+                    class="text-xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-gray-800 to-[#174775] bg-clip-text text-transparent">
+                    Contáctanos</h2>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-[#62E3F3] to-[#174775] mx-auto mb-8 rounded-full"></div>
+                <p class="text-sm md:text-base text-gray-600 max-w-3xl mx-auto">
                     Estamos para responder tus preguntas y ayudarte en el proceso de admisión. ¡Escríbenos!
                 </p>
             </div>
         </div>
 
         <!-- Contenido principal: Información + Mapa -->
-        <div class="container mx-auto px-4 pb-10">
+        <div class="container mx-auto pb-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
 
-                <div class="bg-white rounded-2xl shadow-xl p-8 lg:p-10 h-full">
+                <div
+                    class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 p-8 lg:p-10 h-full">
                     <div class="h-full flex flex-col justify-between">
                         <div>
-                            <h3 class="text-2xl font-bold mb-8 text-primary">Información de contacto</h3>
+                            <h3 class="text-lg md:text-xl font-bold mb-8 text-primary">Información de contacto</h3>
 
                             <div class="space-y-6">
                                 <!-- Dirección -->
@@ -764,8 +792,8 @@
                                         </div>
                                     </div>
                                     <div class="ml-4">
-                                        <h4 class="text-lg font-semibold text-gray-800 mb-1">Dirección</h4>
-                                        <p class="text-gray-600 leading-relaxed">
+                                        <h4 class="text-base md:text-lg font-semibold text-gray-800 mb-1">Dirección</h4>
+                                        <p class="text-sm md:text-base text-gray-600 leading-relaxed">
                                             Adolfo López Mateos 1030, Zaragoza<br>
                                             Ejido Zaragoza, 27297 Torreón, Coah.
                                         </p>
@@ -782,8 +810,8 @@
                                         </div>
                                     </div>
                                     <div class="ml-4">
-                                        <h4 class="text-lg font-semibold text-gray-800 mb-1">Teléfonos</h4>
-                                        <div class="space-y-1">
+                                        <h4 class="text-base md:text-lg font-semibold text-gray-800 mb-1">Teléfonos</h4>
+                                        <div class="text-sm md:text-base space-y-1">
                                             <p class="text-gray-600">+1 (234) 567-8900</p>
                                             <p class="text-gray-600">+1 (234) 567-8901</p>
                                         </div>
@@ -799,8 +827,9 @@
                                         </div>
                                     </div>
                                     <div class="ml-4">
-                                        <h4 class="text-lg font-semibold text-gray-800 mb-1">Correo electrónico</h4>
-                                        <div class="space-y-1">
+                                        <h4 class="text-base md:text-lg font-semibold text-gray-800 mb-1">Correo
+                                            electrónico</h4>
+                                        <div class="text-sm md:text-base space-y-1">
                                             <p class="text-gray-600">info@cm-meze.edu</p>
                                             <p class="text-gray-600">admisiones@cm-meze.edu</p>
                                         </div>
@@ -816,8 +845,9 @@
                                         </div>
                                     </div>
                                     <div class="ml-4">
-                                        <h4 class="text-lg font-semibold text-gray-800 mb-1">Horario de atención</h4>
-                                        <div class="space-y-1">
+                                        <h4 class="text-base md:text-lg font-semibold text-gray-800 mb-1">Horario de
+                                            atención</h4>
+                                        <div class="text-sm md:text-base space-y-1">
                                             <p class="text-gray-600">
                                                 <span class="font-medium">Lunes a Viernes:</span> 7:30 am - 3:30 pm
                                             </p>
@@ -832,7 +862,8 @@
 
                         <!-- Redes sociales y WhatsApp -->
                         <div class="mt-8 pt-6 border-t border-gray-200">
-                            <h4 class="text-lg font-semibold mb-4 text-gray-800">Conéctate con nosotros</h4>
+                            <h4 class="text-base md:text-lg font-semibold mb-4 text-gray-800">Conéctate con nosotros
+                            </h4>
                             <div class="flex flex-col sm:flex-row gap-4">
                                 <!-- Redes sociales -->
                                 <div class="flex space-x-3">
@@ -849,7 +880,7 @@
                                 <!-- Botón WhatsApp -->
                                 <a href="https://wa.me/+528715981909?text=Hola%21%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n"
                                     target="_blank"
-                                    class="flex-1 sm:flex-none inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition-all duration-300 font-medium transform hover:scale-105 shadow-lg hover:shadow-xl">
+                                    class="text-base md:text-lg flex-1 sm:flex-none group-hover:scale-105 inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition-all duration-300 font-medium transform hover:scale-105 shadow-lg hover:shadow-xl">
                                     <i class="fab fa-whatsapp mr-2 text-lg"></i>
                                     Contáctanos por WhatsApp
                                 </a>
@@ -859,7 +890,8 @@
                 </div>
 
                 <!-- Mapa -->
-                <div class="bg-white rounded-2xl shadow-xl overflow-hidden h-full min-h-[500px]">
+                <div
+                    class="bg-white border-8 border-white hover:shadow-2xl transition-all duration-500 ease-in-out rounded-2xl shadow-lg overflow-hidden h-full min-h-[500px]">
                     <div class="h-full relative">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.434846651258!2d-103.35611000000002!3d25.5238883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868fc4abbf0ff885%3A0x9c440d1fae9a59e1!2sColegio%20Meze%20A.C.!5e0!3m2!1ses!2smx!4v1747078423788!5m2!1ses!2smx"
@@ -871,22 +903,23 @@
             </div>
         </div>
 
-        <div class="container  mx-auto px-4 pb-10">
+        <div class="container  mx-auto">
             <div
                 class="card-contact-fade-down border-5 opacity-0 translate-y-1/2 hover:scale-105 transition-all duration-500 ease-in-out bg-[#174775] bg-gradient-to-r from-primary to-[#62E3F3]/60 rounded-2xl p-8 text-center text-white shadow-2xl">
-                <h3 class="text-2xl md:text-3xl font-bold mb-4">¿Listo para formar parte de nuestra comunidad?</h3>
-                <p class="text-lg mb-6 opacity-90">
+                <h3 class="text-lg md:text-xl font-bold mb-4">¿Listo para formar parte de nuestra comunidad?
+                </h3>
+                <p class="text-sm md:text-base mb-6 opacity-90">
                     Agenda una visita a nuestro campus y conoce de cerca nuestra propuesta educativa
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="https://wa.me/+528715981909?text=Hola%21%20Me%20gustar%C3%ADa%20agendar%20una%20visita%20al%20campus"
                         target="_blank"
-                        class="inline-flex items-center justify-center bg-accent text-primary px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-white/20 hover:shadow-lg">
+                        class="text-base md:text-lg inline-flex items-center justify-center bg-accent text-primary px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-white/20 hover:shadow-lg">
                         <i class="fas fa-calendar-alt mr-2"></i>
                         Agendar Visita
                     </a>
                     <a href="https://wa.me/+528715981909?text=Hola%21%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n"
-                        class="inline-flex items-center justify-center text-white px-8 py-3 border-2 rounded-lg font-semibold transition-all duration-300 hover:bg-white/30">
+                        class="text-base md:text-lg inline-flex items-center justify-center text-white px-8 py-3 border-2 rounded-lg font-semibold transition-all duration-300 hover:bg-white/30">
                         <i class="fas fa-envelope mr-2"></i>
                         Solicitar Información
                     </a>
@@ -896,7 +929,7 @@
     </section>
     <!-- Footer (simplificado para el ejemplo) -->
     <footer class="bg-white border-t border-gray-200">
-        <div class="container mx-auto px-4 py-8">
+        <div class="container mx-auto p-10">
             <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-6">
                 <div class="flex flex-wrap justify-center gap-4 md:justify-start">
                     <a href="#inicio"
