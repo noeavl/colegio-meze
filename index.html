@@ -260,19 +260,24 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="flex flex-col gap-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <div class="flex flex-col gap-6 h-full">
+                    <!-- Card "Por qué elegirnos" -->
                     <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-2 shadow-xl">
-                        <div class="bg-gradient-to-r from-[#174775] to-[#62E3F3] rounded-xl p-6">
-                            <h3 class="text-xl md:text-4xl font-bold text-white flex items-center">
-                                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
-                                    <i class="fas fa-star text-white text-xl"></i>
+                        <div class="bg-gradient-to-r from-[#174775] to-[#62E3F3] rounded-xl p-4 md:p-6">
+                            <h3
+                                class="text-lg md:text-2xl lg:text-3xl font-bold text-white flex flex-col items-center text-center md:flex-row md:items-center md:text-left gap-3 md:gap-4">
+                                <div
+                                    class="w-10 h-10 md:w-12 md:h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-star text-white text-lg md:text-xl"></i>
                                 </div>
                                 ¿Por qué elegirnos?
                             </h3>
                         </div>
                     </div>
-                    <div class="relative group">
+
+                    <!-- Imagen con efectos -->
+                    <div class="relative group flex-1">
                         <div
                             class="absolute inset-0 bg-gradient-to-tr from-[#174775]/20 to-[#62E3F3]/20 rounded-3xl transform rotate-3 group-hover:rotate-1 transition-transform duration-700">
                         </div>
@@ -280,9 +285,9 @@
                             class="absolute inset-0 bg-gradient-to-bl from-[#62E3F3]/10 to-[#174775]/10 rounded-3xl transform -rotate-2 group-hover:rotate-0 transition-transform duration-700">
                         </div>
                         <div
-                            class="relative bg-white rounded-3xl p-4 shadow-2xl transform group-hover:scale-105 transition-all duration-500">
+                            class="relative bg-white rounded-3xl p-4 shadow-2xl transform group-hover:scale-105 transition-all duration-500 h-full">
                             <img src="./assets/img/cm-students.webp" alt="Estudiantes trabajando en equipo"
-                                class="rounded-2xl w-full h-full object-cover">
+                                class="rounded-2xl w-full h-full object-cover min-h-[300px] md:min-h-[400px]">
                         </div>
                         <div
                             class="absolute -top-4 -right-4 w-8 h-8 bg-[#62E3F3] rounded-full opacity-80 animate-pulse">
@@ -293,116 +298,113 @@
                     </div>
                 </div>
 
-
-                <div class="space-y-8">
-
-                    <div class="space-y-6">
-                        <!-- Card 1 -->
-                        <div class="w-full">
+                <!-- Cards container -->
+                <div class="space-y-6 h-full flex flex-col justify-center">
+                    <!-- Card 1 -->
+                    <div class="w-full">
+                        <div
+                            class="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:bg-white border border-white/50 hover:border-[#62E3F3]/30">
                             <div
-                                class="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:bg-white border border-white/50 hover:border-[#62E3F3]/30">
-                                <div
-                                    class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-4">
-                                    <div class="flex-shrink-0 md:mr-4">
-                                        <div
-                                            class="w-14 h-14 bg-gradient-to-br from-[#174775] to-[#62E3F3] rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                            <i class="fas fa-graduation-cap text-white text-xl"></i>
-                                        </div>
+                                class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-4">
+                                <div class="flex-shrink-0 md:mr-4">
+                                    <div
+                                        class="w-14 h-14 bg-gradient-to-br from-[#174775] to-[#62E3F3] rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                        <i class="fas fa-graduation-cap text-white text-xl"></i>
                                     </div>
-                                    <div class="flex-1">
-                                        <h4
-                                            class="text-lg md:text-xl font-bold text-gray-800 mb-3 group-hover:text-[#174775] transition-colors">
-                                            Excelencia educativa desde el inicio
-                                        </h4>
-                                        <p
-                                            class="text-sm md:text-base text-gray-600 leading-relaxed group-hover:text-gray-700">
-                                            Formación sólida en cada etapa, desde preescolar hasta bachillerato, con
-                                            programas actualizados y docentes comprometidos con el aprendizaje.
-                                        </p>
-                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <h4
+                                        class="text-lg md:text-xl font-bold text-gray-800 mb-3 group-hover:text-[#174775] transition-colors">
+                                        Excelencia educativa desde el inicio
+                                    </h4>
+                                    <p
+                                        class="text-sm md:text-base text-gray-600 leading-relaxed group-hover:text-gray-700">
+                                        Formación sólida en cada etapa, desde preescolar hasta bachillerato, con
+                                        programas actualizados y docentes comprometidos con el aprendizaje.
+                                    </p>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Card 2 -->
-                        <div class="w-full">
+                    <!-- Card 2 -->
+                    <div class="w-full">
+                        <div
+                            class="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:bg-white border border-white/50 hover:border-[#62E3F3]/30">
                             <div
-                                class="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:bg-white border border-white/50 hover:border-[#62E3F3]/30">
-                                <div
-                                    class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-4">
-                                    <div class="flex-shrink-0 md:mr-4">
-                                        <div
-                                            class="w-14 h-14 bg-gradient-to-br from-[#62E3F3] to-cyan-400 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                            <i class="fas fa-heart text-white text-xl"></i>
-                                        </div>
+                                class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-4">
+                                <div class="flex-shrink-0 md:mr-4">
+                                    <div
+                                        class="w-14 h-14 bg-gradient-to-br from-[#62E3F3] to-cyan-400 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                        <i class="fas fa-heart text-white text-xl"></i>
                                     </div>
-                                    <div class="flex-1">
-                                        <h4
-                                            class="text-lg md:text-xl font-bold text-gray-800 mb-3 group-hover:text-[#174775] transition-colors">
-                                            Desarrollo integral del estudiante
-                                        </h4>
-                                        <p
-                                            class="text-sm md:text-base text-gray-600 leading-relaxed group-hover:text-gray-700">
-                                            Fomentamos el crecimiento académico, emocional y social desde la infancia
-                                            hasta
-                                            la adolescencia, preparando estudiantes seguros y responsables.
-                                        </p>
-                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <h4
+                                        class="text-lg md:text-xl font-bold text-gray-800 mb-3 group-hover:text-[#174775] transition-colors">
+                                        Desarrollo integral del estudiante
+                                    </h4>
+                                    <p
+                                        class="text-sm md:text-base text-gray-600 leading-relaxed group-hover:text-gray-700">
+                                        Fomentamos el crecimiento académico, emocional y social desde la infancia
+                                        hasta
+                                        la adolescencia, preparando estudiantes seguros y responsables.
+                                    </p>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Card 3 -->
-                        <div class="w-full">
+                    <!-- Card 3 -->
+                    <div class="w-full">
+                        <div
+                            class="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:bg-white border border-white/50 hover:border-[#62E3F3]/30">
                             <div
-                                class="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:bg-white border border-white/50 hover:border-[#62E3F3]/30">
-                                <div
-                                    class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-4">
-                                    <div class="flex-shrink-0 md:mr-4">
-                                        <div
-                                            class="w-14 h-14 bg-gradient-to-br from-emerald-500 to-[#62E3F3] rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                            <i class="fas fa-lightbulb text-white text-xl"></i>
-                                        </div>
+                                class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-4">
+                                <div class="flex-shrink-0 md:mr-4">
+                                    <div
+                                        class="w-14 h-14 bg-gradient-to-br from-emerald-500 to-[#62E3F3] rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                        <i class="fas fa-lightbulb text-white text-xl"></i>
                                     </div>
-                                    <div class="flex-1">
-                                        <h4
-                                            class="text-lg md:text-xl font-bold text-gray-800 mb-3 group-hover:text-[#174775] transition-colors">
-                                            Innovación en el aula
-                                        </h4>
-                                        <p
-                                            class="text-sm md:text-base text-gray-600 leading-relaxed group-hover:text-gray-700">
-                                            Contamos con tecnología de punta y herramientas digitales adaptadas a cada
-                                            nivel
-                                            educativo, promoviendo un aprendizaje activo y significativo.
-                                        </p>
-                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <h4
+                                        class="text-lg md:text-xl font-bold text-gray-800 mb-3 group-hover:text-[#174775] transition-colors">
+                                        Innovación en el aula
+                                    </h4>
+                                    <p
+                                        class="text-sm md:text-base text-gray-600 leading-relaxed group-hover:text-gray-700">
+                                        Contamos con tecnología de punta y herramientas digitales adaptadas a cada
+                                        nivel
+                                        educativo, promoviendo un aprendizaje activo y significativo.
+                                    </p>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Card 4 -->
-                        <div class="w-full">
+                    <!-- Card 4 -->
+                    <div class="w-full">
+                        <div
+                            class="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:bg-white border border-white/50 hover:border-[#62E3F3]/30">
                             <div
-                                class="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:bg-white border border-white/50 hover:border-[#62E3F3]/30">
-                                <div
-                                    class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-4">
-                                    <div class="flex-shrink-0 md:mr-4">
-                                        <div
-                                            class="w-14 h-14 bg-gradient-to-br from-purple-500 to-[#174775] rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                            <i class="fas fa-globe text-white text-xl"></i>
-                                        </div>
+                                class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-4">
+                                <div class="flex-shrink-0 md:mr-4">
+                                    <div
+                                        class="w-14 h-14 bg-gradient-to-br from-purple-500 to-[#174775] rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                        <i class="fas fa-globe text-white text-xl"></i>
                                     </div>
-                                    <div class="flex-1">
-                                        <h4
-                                            class="text-lg md:text-xl font-bold text-gray-800 mb-3 group-hover:text-[#174775] transition-colors">
-                                            Proyección internacional
-                                        </h4>
-                                        <p
-                                            class="text-sm md:text-base text-gray-600 leading-relaxed group-hover:text-gray-700">
-                                            Ofrecemos programas de enseñanza de idiomas que abren puertas a un mundo de
-                                            oportunidades globales para nuestros estudiantes.
-                                        </p>
-                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <h4
+                                        class="text-lg md:text-xl font-bold text-gray-800 mb-3 group-hover:text-[#174775] transition-colors">
+                                        Proyección internacional
+                                    </h4>
+                                    <p
+                                        class="text-sm md:text-base text-gray-600 leading-relaxed group-hover:text-gray-700">
+                                        Ofrecemos programas de enseñanza de idiomas que abren puertas a un mundo de
+                                        oportunidades globales para nuestros estudiantes.
+                                    </p>
                                 </div>
                             </div>
                         </div>
